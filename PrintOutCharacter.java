@@ -1,6 +1,4 @@
-import java.util.Locale;
-
-public class HelloGregor {
+public class PrintOutCharacter {
     public static void main(String[] args) {
         // printing out a character/ part of a word or a text out of the string;
         String input = "HELLO Gregor";
