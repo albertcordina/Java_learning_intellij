@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class NestedLoop {
+public class Loop_inside_Loop {
     public static void main(String[] args) {
         // nested loop = a loop inside a loop
         // import java.util.Scanner; is on the top of the code

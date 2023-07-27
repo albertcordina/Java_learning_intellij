@@ -1,4 +1,4 @@
-public class NestedLoop1 {
+public class Loop_For {
     public static void main(String[] args) {
 
         // for = nesting loop
