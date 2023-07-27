@@ -1,6 +1,6 @@
 public class PrintOutCharacter {
     public static void main(String[] args) {
-        // printing out a character/ part of a word or a text out of the string;
+        // prints out a CHARACTER or part of a WORD or a TEXT out of the string;
         String input = "HELLO Gregor";
 
         System.out.println(input.charAt(6));          // one character;
