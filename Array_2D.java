@@ -18,7 +18,6 @@ public class Array_2D {
                 System.out.print(cars[i][j] + " "); // i = row, j = column;
             }
         }
-
         // another way:
         // String[][] cars = {
         //                      {"Camaro", "Corvette", "Silverado"},

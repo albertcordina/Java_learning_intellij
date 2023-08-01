@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Math2 {
+public class Math_Multiplication_Scanner {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

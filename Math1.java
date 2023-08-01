@@ -19,7 +19,5 @@ public class Math1 {
         int result5 = -192;
         result5 %= 100;
         System.out.println("The result of the operation: -192 % 100 = "+result5);
-
-
     }
 }

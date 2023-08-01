@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Math3 {
+public class Math_Calculation_Scanner {
     public static void main(String[] args) {
         // the first calculation:
         System.out.println("The calculation of the following: 8d - 3d * 2d + 3d / 2d");
