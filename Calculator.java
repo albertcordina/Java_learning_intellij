@@ -30,19 +30,20 @@ public class Calculator {
                 result = firs_figure * second_figure;
                 System.out.println("The result: " + result);
                 break;
-            case "/":
-                if (second_figure == 0) {
-                    System.out.print("This action can't be done. Please, do not use '0' for division.\nPlease, enter the second figure, which is not '0': ");
-                    double second_figure2 = scanner.nextDouble();
-                    if (second_figure2 != 0){
-                   System.out.println("The result: " + (firs_figure / second_figure2));}
-
-                } else {
-                    result = firs_figure / second_figure;
-                    System.out.println("The result: " + result);
-                    break;
+            case "/":                                  // we use 'if' for the positive outcome and then the loop 'while' for the negative outcome(s) + 'if' at the end;
+                if (second_figure != 0) {
+                    System.out.println("The result: " + (firs_figure / second_figure));
                 }
 
+                while (second_figure == 0) {
+                    System.out.print("This action can't be done. Please, do not use '0' for division.\nPlease, enter the second figure: ");
+                    second_figure = scanner.nextDouble();
+                }
+
+                if (second_figure != 0) {
+                    System.out.println("The result: " + (firs_figure / second_figure));
+                }
+                break;
         }
     }
 }

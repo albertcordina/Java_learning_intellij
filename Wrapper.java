@@ -23,7 +23,7 @@ public class Wrapper {
         String e = "Albert";
 
         // this is unboxing:
-        if (a==true) {
+        if (a == true) {
             System.out.println("This is true");
         }
     }
