@@ -13,18 +13,18 @@ class Vehicles {                                                 // 'Vehicle' is
     public int weight;         // access modifiers 'private',i.e. for the class only, or 'public';
     public String color;
 
-    public Vehicles(float speed, int weight, String color) {      // the parameters of the 'Constructor' match to
-        this.speed = speed;                                       // the parameters of the 'Constructor' in underclass 'car';
+    public Vehicles(float speed, int weight, String color) {      // the parameters of the 'Constructor.java' match to
+        this.speed = speed;                                       // the parameters of the 'Constructor.java' in underclass 'car';
         this.weight = weight;                                     // there could be one constructor for the many 'extended' classes,
         this.color = color;                                       // as long as the parameters are matching;
-        System.out.println("Object via 'Constructor': \nspeed: " + speed + "\nweight: " + weight + "\ncolor: " + color + "\n");
+        System.out.println("Object via 'Constructor.java': \nspeed: " + speed + "\nweight: " + weight + "\ncolor: " + color + "\n");
     }
 
-   /* public Vehicles(int speed, int weight, String color) {       // the parameters of the 'Constructor' match the
-        this.speed = speed;                                      // parameters of the 'Constructor' in underclass 'truck';
+   /* public Vehicles(int speed, int weight, String color) {       // the parameters of the 'Constructor.java' match the
+        this.speed = speed;                                      // parameters of the 'Constructor.java' in underclass 'truck';
         this.weight = weight;
         this.color = color;
-        System.out.println("Object via 'Constructor' for trucks: \nspeed: " + speed + "\nweight: " + weight + "\ncolor: " + color + "\n");
+        System.out.println("Object via 'Constructor.java' for trucks: \nspeed: " + speed + "\nweight: " + weight + "\ncolor: " + color + "\n");
     } */
 }
 

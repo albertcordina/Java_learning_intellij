@@ -2,6 +2,7 @@ public class Loop_For {
     public static void main(String[] args) {
 
         // for loop = executes a block of code a LIMITED amount of times; 1:28;
+        // 'for' loop is the most used in Java;
 
         // for (int i=0; i<10; i++) {System.out.println(i);}
         for (int i = 0; i < 10; i += 2) {

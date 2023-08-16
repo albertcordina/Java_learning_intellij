@@ -1,4 +1,4 @@
-public class Transport {
+public class Constructor {
     public float speed;         // NOTE: the variables should have the
     public int weight;          // access modifiers 'private',i.e. for the class only, or 'public';
     public String color;
@@ -7,11 +7,11 @@ public class Transport {
     // The 'Constructors' MUST HAVE: the different NUMBERS or the TYPES of parameters,
     // and they automatically get called to the appropriate objects in the main class 'Factory';
                                                     // Via 'Constructor';
-    public Transport(float speed, int weight, String color, byte[] coordinate) {                     // the 'Constructor' for the Object 'cars';
+    public Constructor(float speed, int weight, String color, byte[] coordinate) {                     // the 'Constructor' for the Object 'cars';
         System.out.println("Object via 'Constructor' for cars: \nspeed: " + speed + "\nweight: " + weight + "\ncolor: " + color + "\n");
     }
 
-    public Transport(float speed, int weight) {                                                      // the 'Constructor' for the object 'trucks';
+    public Constructor(float speed, int weight) {                                                      // the 'Constructor' for the object 'trucks';
         System.out.println("Via 'Constructor' vor trucks: \nspeed: " + speed + "\nweight: " + weight + "\n");
     }
                                                     //  Via the 'Method':
@@ -27,8 +27,8 @@ public class Transport {
 class Factory {
     public static void main(String[] args) {
                                                    //  Via the 'Constructors':
-        Transport cars = new Transport(50, 2000, "Red", new byte[]{100, 0, 100});  // The objects 'cars' and 'trucks' with the entered parameters
-        Transport trucks = new Transport(30, 5000);                                      // GETS linked to the 'Constructors' in the class 'Transport';
+        Constructor cars = new Constructor(50, 2000, "Red", new byte[]{100, 0, 100});  // The objects 'cars' and 'trucks' with the entered parameters
+        Constructor trucks = new Constructor(30, 5000);                                      // GETS linked to the 'Constructors' in the class 'Constructor';
 
                                                    //  Via the 'Method':
         cars.setValues(50, 2000, "Red", new byte[]{100, 0, 100});    // to print out the results via the method 'setValues';
@@ -36,8 +36,8 @@ class Factory {
 
                                                    //  Alternative/ basic way:
 
-      /*   Transport cars = new Transport ();        // The objects 'cars' and 'trucks'
-           Transport trucks = new Transport ();      // are linked to the class 'Transport';
+      /*   Constructor cars = new Constructor ();        // The objects 'cars' and 'trucks'
+           Constructor trucks = new Constructor ();      // are linked to the class 'Constructor';
 
          cars.speed = 50;
          cars.weight = 2000;
