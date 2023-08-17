@@ -1,8 +1,6 @@
 import javax.swing.JOptionPane;
-public class PopUp {
+public class PopUp {                           // to display the questioner via popups windows for a user;
     public static void main(String[] args) {
-
-// to display the questioner via popups windows for a user;
 
                 String name = JOptionPane.showInputDialog("Enter your name");
                 JOptionPane.showMessageDialog(null, "Hello " + name);
@@ -13,5 +11,4 @@ public class PopUp {
                 double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
                 JOptionPane.showMessageDialog(null, "You are " + height + " cm tall");
             }
-
         }

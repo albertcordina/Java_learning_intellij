@@ -15,7 +15,6 @@ public class Factorial_Calculation {
                     for (i = 1; i <= n; i++) {
                         fact = fact * i;
                     }
-                    scanner.close();
                     System.out.println("Factorial of " + n + " is " + fact);
                 }
             }
@@ -25,5 +24,6 @@ public class Factorial_Calculation {
             }
             System.out.println("Factorial of " + n + " is " + fact);
         }
+        scanner.close();
     }
 }
