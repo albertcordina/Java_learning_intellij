@@ -11,8 +11,10 @@ public class Voting_eligibility {
         String status = scanner.nextLine();
         status = scanner.nextLine();
 
+
         boolean withinAge = (age >= 18);
-        boolean citizen = (status == "Yes");
+        String Yes = "Yes";
+        boolean citizen = (status.equals(Yes));
 
      /*   if (withinAge && citizen){
             System.out.println("You are eligible to vote!");
@@ -25,4 +27,5 @@ public class Voting_eligibility {
         System.out.println(result);
         scanner.close();
     }
+
 }
