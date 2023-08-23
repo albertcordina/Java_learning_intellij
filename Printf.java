@@ -4,7 +4,7 @@ public class Printf {
         //            two arguments = format string + (object/variable/value)
         //            % [flags] [precision] [width] [conversion-character]
 
-        System.out.printf("This is a format string %d",123); // '123' is a VALUE
+        System.out.printf("This is a format string %d\n",123); // '123' is a VALUE
         System.out.printf("%d This is a format string",123); // '%d' is a FORMAT SPECIFIER of the '123', which is the 'int',
                                                              // it prints out the value at the end or the beginning of the format string, i.e. the 'printf';
 
@@ -36,6 +36,12 @@ public class Printf {
         // 0 : numeric values are zero-padded
         // , : coma grouping separator if numbers > 1000
 
-        System.out.printf("You have this much money %,020f",myDouble);
+        System.out.printf("\nYou have this much money %,020f",myDouble);
+
+        String name = "John";
+        int age = 34;
+        // %s, %d  ->  in case of 'String' and 'int';
+        System.out.printf("\nMy name is %s and I am %d years old", name, age); // very useful in case if the value is repeated many times within the text;
+        System.out.printf("\nMy name is %s and I am %d years old", "John", 34); // it can also be used without creating the variables;
     }
 }

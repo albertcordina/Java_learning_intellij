@@ -26,8 +26,9 @@ public class Array1 {
             myArr3[x] = x;
             System.out.println(x);                 // and prints them out;
 
-*/
-        System.out.println(addition(myArr4));     // we need to call the method from the outside in order to get the result;
+*/      int result = myArr4.length; // we can save the 'myArr4' value in a 'result',
+        System.out.println(result);  // and print it out;
+        System.out.println(addition(myArr4));// or we need to call the method from the outside in order to get the result;
         }
 
     public static int addition (int [] myArr4) {

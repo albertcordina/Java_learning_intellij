@@ -83,8 +83,8 @@ class Student extends Application {
         if (grade >= 1 && grade <= 5) {
             System.out.println(name + ", thank you very much.\n");
         }
-        if (grade < 1 || grade > 5) {
-            while (grade < 1 || grade > 5) {
+        if (grade <= 1 || grade >= 5) {
+            while (grade <= 1 || grade >= 5) {
                 System.out.print("Please, enter a valid grade, i.e. from '1' to '5': ");
                 grade = scanner.nextByte();
                 if (grade >= 1 && grade <= 5) {

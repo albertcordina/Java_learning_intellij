@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Number_Range {
+public class Boolean_number_range {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

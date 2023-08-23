@@ -1,6 +1,6 @@
-import java.util.Random;       //  used for crating a guessing games, e.t.c.;
+import java.util.Random;       // is used for crating a guessing games, e.t.c.;
 
-public class Random_numbers {  // NOTE: Random String can be generated only via a String Array;
+public class Random_numbers {
     public static void main(String[] args) {
         Random random1 = new Random();
         Random random2 = new Random();
@@ -10,6 +10,6 @@ public class Random_numbers {  // NOTE: Random String can be generated only via 
 
         System.out.println("Random number: " + x);
         System.out.println("Random number: " + y);
-
+// NOTE: Random String can be generated only via a String Array;
     }
 }
