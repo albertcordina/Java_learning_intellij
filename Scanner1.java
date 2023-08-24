@@ -37,6 +37,8 @@ public class Scanner1 {
                 }
             }
         }
+
+        scanner.close();
     }
 }
 

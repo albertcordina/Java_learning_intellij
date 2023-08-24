@@ -1,11 +1,10 @@
-public class Array_calculation {
+public class Array_operations {
 
     public static void main(String[] args) {
 
         int[] love = new int[2]; // the first way of creating an Array;
         love[0] = 6;
         love[1] = 10;
-
 
         System.out.println(addition(love));
 
@@ -21,7 +20,6 @@ public class Array_calculation {
         System.out.println(aboveAverage(way,average));
 
     }
-
     public static int addition(int[] love) { // the method calculates the 'sum'
                                              // and the 'average' of an Array;
         int x = 0;
@@ -31,8 +29,6 @@ public class Array_calculation {
         return x;
         //	return x / love.length; //-> if we need an average;
     }
-
-
     public static int maximum(int[] life) { // the method identifies an element with the
                                             // 'minimum' or 'maximum' value within an Array;
         int x = life[0];

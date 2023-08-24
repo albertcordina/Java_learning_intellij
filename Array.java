@@ -14,9 +14,18 @@ public class Array {
         // cars[2] = "Tesla";
         // System.out.println(cars[2]);
 
-        for (int i = 0; i < cars.length; i++) {
+        for (int i = 0; i < cars.length; i++) { // to display all the arrays of the cars;
             System.out.println(cars[i]);
-        } // to display all the arrays of the cars;
+        }
+
+        for (String i : cars){       // a shorter way to display all the elements (String) of the Array;
+            System.out.println(i);
+        }
+
+        int [] path = {1,2,3,4,5};
+        for (int i : path){          // a short way to display all the elements (int) of the Array;
+            System.out.println(i);
+        }
     }
 }
 
@@ -36,8 +45,5 @@ int [] values = new int [4];  // setting the size of the Array without values ye
 values [0] = 6;               // we can assign a specific value for each element of the Array,
 values [1] = 14;              // and it is not necessary to specify all of them;
 values [2] = 23;
-
-
-
 
 */

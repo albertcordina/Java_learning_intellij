@@ -1,16 +1,16 @@
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
-public class Array1 {
-    public static int [] myArr4 = {1,2,3};
+public class Array_create {
 
     public static void main(String[] args) {
- /*       int[] num = {1, 2, 3};  // the most common way of assigning the values to the array;
+        int[] num = {1, 2, 3};  // the most common way of assigning the values to the array;
 
         double[] love = new double[10]; // assigning the size (10 empty elements) into 'love';
         love[0] = 5;  // assigning a value to the first element in the array, i.e. to [0];
         love[1] = 5;
         love[2] = 5;
+
         // the 'IntStream' Java interface is used to create the Arrays;
         int[] myArr = IntStream.range(1, 5).toArray(); // it creates an Array of 5 or more elements, containing the numbers from 1 to 4;
         System.out.println(Arrays.toString(myArr));
@@ -25,18 +25,6 @@ public class Array1 {
         for (int x = 0; x < myArr3.length; x++) {   // and the loop selects every one of them,
             myArr3[x] = x;
             System.out.println(x);                 // and prints them out;
-
-*/      int result = myArr4.length; // we can save the 'myArr4' value in a 'result',
-        System.out.println(result);  // and print it out;
-        System.out.println(addition(myArr4));// or we need to call the method from the outside in order to get the result;
         }
-
-    public static int addition (int [] myArr4) {
-
-        int sum = 0;                               // a storage for collection is created;
-        for (int i = 0; i < myArr4.length; i++) {  //  revision of the all elements is proceeded;
-            sum += myArr4[i];                      //  'sum' is collecting all the values of the elements;
-        }
-        return (sum);                              // and it is ready to provide the result via the 'myArr4' from outside the method;
     }
 }

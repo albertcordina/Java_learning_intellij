@@ -15,8 +15,8 @@ public class Array_2D {
 
         for (int i = 0; i < cars.length; i++) {
             System.out.println();
-            for (int j = 0; j < cars[i].length; j++) {
-                System.out.print(cars[i][j] + " "); // i = row, j = column;
+            for (int j = 0; j < cars[i].length; j++) {  //  nested 'for' loop;
+                System.out.print(cars[i][j] + " ");     // i = row, j = column;
             }
         }  */
         // another way:
@@ -46,9 +46,9 @@ public class Array_2D {
         arr [1] [0] = 30;
         arr [1] [1] = 40;
 
-        for (int [] row : arr) {     // for each loop is used for involving all elements within an Array;
-            for (int num : row) {
-                System.out.print(num + "");
+        for (int [] x : arr) {     // for each loop is used for involving all elements within an Array;
+            for (int y : x) {
+                System.out.print(y);
             }
             System.out.println();
         }

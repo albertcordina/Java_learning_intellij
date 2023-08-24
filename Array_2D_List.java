@@ -26,5 +26,6 @@ public class Array_2D_List {
 
         // System.out.println(groceryList); / to print out the whole list of the lists;
         System.out.println(groceryList.get(2).get(1)); // to print out the list number '2' and the '1' value of it, i.e. 'coffee'
+
     }
 }
