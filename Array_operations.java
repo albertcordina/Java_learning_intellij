@@ -2,100 +2,111 @@ public class Array_operations {
 
     public static void main(String[] args) {
 
-        int[] love = new int[2]; // the first way of creating an Array;
-        love[0] = 6;
-        love[1] = 10;
+        int [] arr = {1,2,3,4,5,6};
+        for (int x : arr) {System.out.println(x);} // the number of the elements in the Array (no need a method);
 
-        System.out.println(addition(love));
+        System.out.println(sum(arr));
+        System.out.println(average(arr));
+        double ave = average(arr);
+        System.out.println(max(arr));
+        System.out.println(aboveAverage(arr,ave));
 
 
-        int [] life = {2,6,14,8}; // the second way of creating an Array;
+        int [] [] arr2 = {{1,2,3},{1,2,3}};
+        printOut(arr2);                       // the number of the elements in the 2D Array (needs a method, see below);
 
-        System.out.println(maximum(life));
+        System.out.println(sum2d(arr2));
+        System.out.println(max2d(arr2));
+        System.out.println(average2d(arr2));
+        System.out.println(even(arr2));
 
-        // created for the calculating the number of elements grater than the average of the Array;
-        int [] way = {1,2,3,4,5,6,7};
-        double average = 3.5;
 
-        System.out.println(aboveAverage(way,average));
 
     }
-    public static int addition(int[] love) { // the method calculates the 'sum'
-                                             // and the 'average' of an Array;
+    public static int sum (int [] arr) {  // -> the method for calculating the sum of the Array;
         int x = 0;
-        for (int y : love) {
+        for (int y : arr) {
             x += y;
         }
         return x;
-        //	return x / love.length; //-> if we need an average;
     }
-    public static int maximum(int[] life) { // the method identifies an element with the
-                                            // 'minimum' or 'maximum' value within an Array;
-        int x = life[0];
-        for (int y : life) {
-            if (y > x) {                 // -> for maximum;
-                //      if (y < x) {	 //-> for minimum;
+    public static int max (int [] arr) {  // -> the method for finding the maximum or minimum element of the Array;
+        int x = arr [0];
+        for (int y : arr) {
+            if (y > x) {        // (y < x) -> for finding the minimum;
                 x = y;
             }
         }
         return x;
     }
-
-    public static int aboveAverage(int[] way, double average) { // the method calculates the number of elements
-        int x = 0;                                              // above or under the average of the 'sum' of the whole Array.
-        for (int y : way) {                                     // NOTE: the already calculated average is needed;
-            if (y > average) { //-> for above;
-                // if (y < average) { //-> for under;
+    public static double average (int [] arr) { // -> the method for finding the average of the Array;
+        int x = 0;
+        for (int y : arr) {
+            x += y;
+        }
+        return x/arr.length;
+    }
+    public static int aboveAverage (int [] arr, double ave) { // -> the method of calculating the number of elements
+        int x = 0;                                            //    above the average of the Array;
+        for (int y : arr) {
+            if (y < ave) {
                 x++;
             }
         }
         return x;
     }
 
-}
+    //        THE 2D ARRAYS:
 
+    public static void printOut (int [] [] arr2) {
 
-
-    /*
-    public static int sumValue(int[] numbers) {
-        int sum = 0;                          // initialize the starting 'sum';
-
-        for (int i = 0; i < numbers.length; i++) // Iterate through all elements and add them to sum;
-            sum += numbers[i];
-        return sum;
+        for (int [] x : arr2) {
+            for (int y : x) {
+                System.out.print(y); // print out the 2D Array in one line;
+            }
+            //System.out.println(); // print out the 2D Array in the two lines;
+        }
     }
+    public static int sum2d (int [] [] arr2) {          // -> the method of calculating the sum of the 2D Array;
 
-    public static int maxValue(int[] numbers) {
-        int max = numbers[0];
-        for (int i = 1; i < numbers.length; i++) {
-            if (numbers[i] > max) {
-                max = numbers[i];
+        int x = 0;
+        for (int i = 0; i < arr2.length; i++) {
+            for (int j = 0; j < arr2[i].length; j++) {
+                x += arr2 [i] [j];
             }
         }
-        return max;
+        return x;
     }
-    public static double minValue (int [] numbers) {
-        int min = numbers[0];
-        for (int i = 1; i < numbers.length; i++) {
-            if (numbers[i] < min) {
-                min = numbers[i];
+    public static int max2d (int [] [] arr2) {
+        int x = 0;
+        for (int i = 0; i < arr2.length; i++) {
+            for (int j = 0; j < arr2[i].length; j++) {
+                if (arr2 [i] [j] > x) {   //  (arr2d [i] [j] < x) -> for minimum of the 2D Array;
+                    x = arr2 [i] [j];
+                }
             }
         }
-        return min;
+        return x;
     }
-    public static double aveValue (int [] numbers){
-        int sum = sumValue(numbers);
-        return (double) sum / numbers.length;
+    public static int average2d (int [] [] arr2) {        // -> the method of calculating the average of the 2D Array;
 
+        int x = 0;
+        for (int i = 0; i < arr2.length; i++) {
+            for (int j = 0; j < arr2[i].length; j++) {
+                x += arr2 [i] [j];
+            }
+        }
+        return x/ arr2.length;
     }
-
-    public static void main(String[] args) {
-        int[] numbers = {16, 8, 23, 35, 11, 6, 19};
-        System.out.println("Value of Sum: " + sumValue(numbers));
-        System.out.println("The maximum Value: " + maxValue(numbers));
-        System.out.println("The minimum Value: " + minValue(numbers));
-        System.out.println("The average Value: " + aveValue(numbers));
+    public static int even (int [] [] arr2) {            // -> the method of calculating the even numbers of the 2D Array;
+        int x = 0;
+        for (int i = 0; i < arr2.length; i++) {
+            for (int j = 0; j < arr2[i].length; j++) {
+                if (arr2[i] [j] % 2 == 0) {
+                    x ++;
+                }
+            }
+        }
+        return x;
     }
 }
-
-*/
