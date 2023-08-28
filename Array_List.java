@@ -6,7 +6,8 @@ public class Array_List {
         //             Elements can be added and removed after compilation phase
         //             store reference data types
 
-        ArrayList<String> food = new ArrayList<>();
+        ArrayList<String> food = new ArrayList<>();  // every new 'ArrayList' contains the first 10 empty elements.
+                                                     // The size doubles automatically after all the elements are filled out;
 
         food.add("pizza"); //  'add' method is to add a value;
         food.add("hamburger");
@@ -16,7 +17,7 @@ public class Array_List {
         food.remove(2); // 'remove' method is to remove a value;
         food.clear();         // 'clear' method is to remove all the values;
 
-        for (int i=0; i<food.size(); i++) {
+        for (int i=0; i<food.size(); i++) {  // to print out the all ArrayList;
             System.out.println(food.get(i));
         }
 
