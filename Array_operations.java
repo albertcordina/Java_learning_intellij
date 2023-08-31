@@ -20,8 +20,6 @@ public class Array_operations {
         System.out.println(average2d(arr2));
         System.out.println(even(arr2));
 
-
-
     }
     public static int sum (int [] arr) {  // -> the method for calculating the sum of the Array;
         int x = 0;

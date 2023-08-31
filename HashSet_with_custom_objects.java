@@ -5,9 +5,9 @@ public class HashSet_with_custom_objects {
         HashSet<Vehicle> vehicles = new HashSet<>();
 
         vehicles.add (new Vehicle(1000, "Car"));
-        vehicles.add (new Vehicle(5500, "Truch"));
+        vehicles.add (new Vehicle(5500, "Truck"));
         vehicles.add (new Vehicle(5000, "Bus"));
-        vehicles.add (new Vehicle(1000, "Motocycle"));
+        vehicles.add (new Vehicle(1000, "Motorcycle"));
 
         for (Vehicle vehicle: vehicles) {System.out.println(vehicle);}
     }
