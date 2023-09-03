@@ -1,10 +1,14 @@
 import java.util.ArrayList;
 
-public class Array_List {
+public class ArrayList_rules {
     public static void main(String[] args) {
         // ArrayList = a resizable array. 2:06;
-        //             Elements can be added and removed after compilation phase
-        //             store reference data types
+        // It contains a single array for data storage
+        // Lists are therefore ordered collections (unlike sets) which also allow duplicates.
+        // They are convenient because they enable easy manipulation of elements (such as insertion or fetching) and simple iteration of the entire collection.
+        // Lists are data structures used for sequential element storage.
+        // Elements can be added and removed after compilation phase
+        // store reference data types
 
         ArrayList<String> food = new ArrayList<>();  // every new 'ArrayList' contains the first 10 empty elements.
                                                      // The size doubles automatically after all the elements are filled out;

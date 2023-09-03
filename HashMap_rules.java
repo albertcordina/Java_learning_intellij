@@ -4,9 +4,9 @@ public class HashMap_rules {
     public static void main(String[] args) {
         // does not accept duplicates;
         // it  allows the same values (second element), but does not allow the same keys (the first element);
-        // exists in pairs, i.e. the two Strings;
-        // it uses the LinkedList
-        // it does not have a reference to the previous element but has a reference to the next one;
+        // NOTE: exists always in pairs, i.e. the two elements;
+        // it uses the 'LinkedList' structure,
+        // i.e. it does not have a reference to the previous element but has a reference to the next one;
         // not convenient for iteration;
 
         //  key     value

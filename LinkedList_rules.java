@@ -1,5 +1,5 @@
 import java.util.*;       //     to import all the 'utilities' of Java;
-public class Linked_List {
+public class LinkedList_rules {
         /*  the common area is the List Interface;
             the main difference between the 'ArrayList' and 'LinkedList' is the way they store their data.
             'LinkedList' has its elements in a doubly-linked-list and used more for data addition or deletion (does not contain Arrays).

@@ -1,10 +1,10 @@
 import java.util.*;
-public class HashSet_LinkedHashSet_TreeSet {
+public class HashSet_LinkedHashSet_TreeSet_rules {
 
     public static void main(String[] args) {
 
         /* Java 'HashSet' class implements the Set interface
-         * It stores unique objects. It will not store duplicates.
+         * It stores unique objects. All 'Set' classes will not store duplicates.
          * You do not get an error, simply nothing happens.
          * 'Hashset' doesn't store elements in particular order.
          * There is not 'get' method to access a particular index.
@@ -24,10 +24,9 @@ public class HashSet_LinkedHashSet_TreeSet {
 
 
 
-        // Java 'LinkedHashSet' class also does not have 'Indexes' and it stores the unique objects, however, it keeps them in the particular order;
+        // Java 'LinkedHashSet' class also does not have 'Indexes' and it stores only the unique objects, however, it keeps them in the insertion order;
 
         LinkedHashSet<String> colors = new LinkedHashSet<>();
-
 
         colors.add("white");
         colors.add("red");
@@ -37,7 +36,6 @@ public class HashSet_LinkedHashSet_TreeSet {
 
         for (String color : colors) {   // to iterate/ print out the whole 'LinkedHashSet';
             System.out.println(color);
-
         }
 
 
