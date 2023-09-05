@@ -11,7 +11,7 @@ public class HashMap_Student_Database {
 
         do {
             System.out.print("\n\t  -THE MENU-\n\nPress '1' to add your name and your student ID"
-                    + "\nPress '2' to retrive your ID via your name\nPress '3' to display database\nPress '4' to Exit\n\n"
+                    + "\nPress '2' to retrieve your ID via your name\nPress '3' to display database\nPress '4' to Exit\n\n"
                     + "Please, enter your option here: ");
             option = scanner.nextInt();
 
