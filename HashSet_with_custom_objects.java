@@ -1,0 +1,27 @@
+public class HashSet_with_custom_objects {
+
+  /*  public static void main(String[] args) {
+
+        HashSet<Vehicle> vehicles = new HashSet<>();
+
+        vehicles.add (new Vehicle(1000, "Car"));
+        vehicles.add (new Vehicle(5500, "Truck"));
+        vehicles.add (new Vehicle(5000, "Bus"));
+        vehicles.add (new Vehicle(1000, "Motorcycle"));
+
+        for (Vehicle vehicle: vehicles) {System.out.println(vehicle);}
+    }
+}
+class Vehicle {
+    int serialNumber;
+    String type;
+
+    public Vehicle (int serialNumber, String type) {
+        this.serialNumber = serialNumber;
+        this.type = type;
+    }
+
+    public String toString () {   // 'toString' is an overwritten method, which has the same NAME and PARAMETERS;
+        return serialNumber + ": " + type;
+    } */
+}
