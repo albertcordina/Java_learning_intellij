@@ -19,7 +19,7 @@ public class HashMap_Student_AdvancedDatabase {
 
         do {
             System.out.print("\n\t   -THE MENU-\n\nPress '1' to enter your student's information"
-                    + "\nPress '2' to retrive your personal info\nPress '3' to amend your personal info\nPress '4' to Exit\n\n"
+                    + "\nPress '2' to retrieve your personal info\nPress '3' to amend your personal info\nPress '4' to Exit\n\n"
                     + "Please, enter your option here: ");
             option = scanner.nextInt();
 
@@ -29,7 +29,7 @@ public class HashMap_Student_AdvancedDatabase {
                     System.out.print("\nPlease, enter your ID: ");
                     Integer id1 = scanner.nextInt();
                     if (idName.containsKey(id1)) {
-                        System.out.println("Your ID is already in the database. Press '2' to retrive your info");
+                        System.out.println("Your ID is already in the database. Press '2' to retrieve your info");
                         break;
                     }
                     System.out.print("\nEnter your name: ");

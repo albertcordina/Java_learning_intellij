@@ -1,4 +1,4 @@
-public class NumberCounter {
+class NumberCounter {
 
     void countAndDisplay(int start, int end) {
         int current = start;
@@ -8,10 +8,11 @@ public class NumberCounter {
         }
     }
 }
-     class WhileLoopAssignment {
 
-        public static void main(String[] args) {
-            NumberCounter numberCounter = new NumberCounter();
-            numberCounter.countAndDisplay(1, 10);
-        }
+public class Math_NumberCounter {
+
+    public static void main(String[] args) {
+        NumberCounter numberCounter = new NumberCounter();
+        numberCounter.countAndDisplay(1, 10);
     }
+}
