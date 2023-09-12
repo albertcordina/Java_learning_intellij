@@ -1,5 +1,11 @@
 public class Inheritance_rules {
 
+    /*
+       Inheritance is one of the key features of OOP that allows us to create a new class from an existing class.
+       The new class that is created is known as subclass (child or derived class)
+       and the existing class from where the child class is derived is known as superclass (parent or base class).
+     */
+
     public static void main(String[] args) {
 
         String color = "blue";
@@ -16,13 +22,12 @@ public class Inheritance_rules {
     }
 }
 
-class Moto extends Inheritance_rules {                          // the inherited/ children classes 'extended' are not affecting the superiour/ parent classes;
+class Moto extends Inheritance_rules {        // the inherited/ children classes 'extended' are not affecting the superior/ parent classes;
 
     public static void Motorcycle (String color, int speed) {
         System.out.println("The color of 'Volvo' is " + color + " and the speed is " + speed);
 
     }
-
 }
 class Trucks1 extends Inheritance_rules {
 

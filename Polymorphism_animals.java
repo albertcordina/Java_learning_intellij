@@ -1,5 +1,6 @@
-public class Polymorphism1 {                   // Polymorphism in Java is the ability of an object to take on
-    public static void main(String[] args) {   // many forms from the 'parent' to the 'child' class object;
+public class Polymorphism_animals {           // Polymorphism in Java is the ability of an object to take on
+                                             // many forms from the 'parent' to the 'child' class object;
+    public static void main(String[] args) {
         Animal animal = new Animal();
         Dog dog = new Dog();
         Cat cat = new Cat();
@@ -26,13 +27,13 @@ public class Polymorphism1 {                   // Polymorphism in Java is the ab
         animal.eat();
     }
 }
-
-class Animal {  // NOTE: all other than the 'Main' class, i.e. in our case 'Polymorphism1', classes should be 'public' in case of the separate files;
+//_________________________________________________________________________
+class Animal {  // NOTE: all other than the 'Main' class, i.e. in our case 'Polymorphism_animals', classes should be 'public' in case of the separate files;
     public void eat() {
         System.out.println("Animal is eating ...");
     }
 }
-
+//_________________________________________________________________________
 class Dog extends Animal {  //  class 'Dog' is a child of the class 'Animal';
 
     @Override
@@ -45,6 +46,7 @@ class Dog extends Animal {  //  class 'Dog' is a child of the class 'Animal';
     }
 
 }
+//__________________________________________________________________________
 class Cat extends Animal {  //  class 'Cat' is a child of the class 'Animal';
 
     @Override

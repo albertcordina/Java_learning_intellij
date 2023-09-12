@@ -1,9 +1,17 @@
+import java.util. *;
 public class Array_operations {
 
     public static void main(String[] args) {
 
-        int [] arr = {1,2,3,4,5,6};
+        int [] arr = {3,2,1,4,5,6};
         for (int x : arr) {System.out.println(x);} // the number of the elements in the Array (no need a method);
+
+        Arrays.sort(arr);                          // the method 'sort()' for printing out
+        for (int x : arr) {System.out.println(x);} // all the elements in their uprising values (import java.util.*; is needed);
+
+        Integer [] array = {3,2,1,4,5,6};               // the method 'sort(... , Collections.reverseOrder()) is for
+        Arrays.sort(array, Collections.reverseOrder()); // printing out in counting down all the values of the Array (the variable should be 'reference' type);
+        for (int x : array) {System.out.println(x);}
 
         System.out.println(sum(arr));
         System.out.println(average(arr));
