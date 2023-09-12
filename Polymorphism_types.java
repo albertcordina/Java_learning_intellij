@@ -6,15 +6,13 @@ class Bike {
     static double multiply (double a, double b) {
         return a * b;
     }
-
     /*
-     * Compile-time polymorphism (see above) allows us to use many methods with THE SAME NAME but DIFFERENT SIGNATURES and return types.
-     *
-     *
-     * Method overriding can be used to demonstrate run-time polymorphism (see below).
-     * Run-time polymorphism is associated with different classes, but it allows us to use the same method with different signature names.
-     */
+     * COMPILE-TIME (within one class) polymorphism (see above) allows us to use many methods with THE SAME NAME but DIFFERENT SIGNATURES and return types.
 
+     *   RUN-TIME  (between two or more from 'parent' to 'children' classes) polymorphism is associated with different classes,
+     *              but it allows us to use the same method with different signature names.
+     *              Method overriding can be used to demonstrate run-time polymorphism (see below).
+     */
     void run () {
         System.out.println("riding a bike");
     }
