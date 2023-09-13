@@ -1,5 +1,5 @@
 class Circle4 {
-
+// RUN-TIME  (between two or more classes) polymorphism allows us to use many methods with THE SAME NAME but DIFFERENT SIGNATURES and return types.
     static double calculateArea(double radius) {
         return Math.PI * radius * radius;
     }
@@ -17,7 +17,7 @@ class Triangle  {
         return width * height / 2;
     }
 }
-public class ShapeCalculator {
+public class Polymorphism_RunTime_ShapeCalculator {
 
     public static void main(String[] args) {
 
