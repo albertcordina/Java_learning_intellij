@@ -22,7 +22,7 @@ public class Wrapper_TypeCasting_rules {
          *
          * valueOf() is a static method present in String class.
          * It is used to convert any data type like int, double, char, char array to its string representation by creating a new String object.
-         * We can also use valueOf() to convert a char array to a String, or a subarray of a char array to a String.
+         * We can also use valueOf() to convert a char array to a String, or a subArray of a char array to a String.
          */
 
         int value = 30;
