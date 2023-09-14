@@ -17,7 +17,7 @@ public class HashMap_Linked_Tree_rules {
 
 		 * NOTE:  'Nested Maps' are hard to scale, making it difficult to read the code (code readability).
 		 * More importantly, Maps in Java tend to consume a lot of memory. Populating a Map with even more Maps will only aggravate the memory consumption issue.
-		 * So we have to be careful while using it and it will be used in special scenarios where it is actually required.
+		 * So we have to be careful while using it, and it will be used in special scenarios where it is actually required.
 		 * To create a nested map, we will first have to create a normal HashMap, just the value of this map will be another HashMap.
 		 */
 

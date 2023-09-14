@@ -5,9 +5,11 @@ public class Hash_Set_Map_with_custom_objects {
 
         //     HASH SET:
         Set<Vehicle> vehicles = new HashSet<>(); // use the constructor of the class from below as a parameter;
+                                                 // NOTE: 'TreeSet' DOES NOT work with it, due to the absence of the 'key' value;
 
         vehicles.add(new Vehicle(65, 3000.00,"Car"));
-        vehicles.add(new Vehicle(35, 4000.00,"Truck"));
+        vehicles.add(new Vehicle(35, 4500.00,"Truck"));
+        vehicles.add(new Vehicle(85, 2300.00,"Motorcycle"));
 
         for (Vehicle vehicle : vehicles) {                        //  TO ITERATE THE WHOLE 'HashSet';
             System.out.println(vehicle);
@@ -15,9 +17,11 @@ public class Hash_Set_Map_with_custom_objects {
 
         //     HASH MAP:
         Map<String, Vehicle> body = new HashMap<>();
+        //Map<String, Vehicle> body = new TreeMap<>();  // the 'TreeMap' sorts the 'key' value in alphabetical or numerical order;
 
-        body.put("Marta",new Vehicle(25, 1500.00,"Car"));
-        body.put("John", new Vehicle(10, 1000.00,"Truck"));
+        body.put("Bob",new Vehicle(25, 1500.00,"Car"));
+        body.put("Marta", new Vehicle(10, 1000.00,"Truck"));
+        body.put("Anna", new Vehicle(48, 2200.00,"Motorcycle"));
 
         System.out.println(body.get("John")); // to print out the only values of the 'Vehicle' according to the 'key', i.e. the name of the owner;
 

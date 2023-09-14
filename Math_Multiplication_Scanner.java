@@ -16,11 +16,11 @@ public class Math_Multiplication_Scanner {
 
         System.out.println("Enter the second figure: ");
         y = scanner.nextLong();
-        
+
         // the multiplication:
         z = Math.multiplyExact(x, y);
         System.out.println("The result of the multiplication is: " + z);
 
-
+        scanner.close();
     }
 }
