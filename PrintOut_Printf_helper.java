@@ -1,4 +1,4 @@
-public class Printf {
+public class PrintOut_Printf_helper {
     public static void main(String[] args) {
         // printf() = an optional method to control, format, and display text to the console window ; 2:38;
         //            two arguments = format string + (object/variable/value)
@@ -41,7 +41,8 @@ public class Printf {
         String name = "John";
         int age = 34;
         // %s, %d  ->  in case of 'String' and 'int';
-        System.out.printf("\nMy name is %s and I am %d years old", name, age); // very useful in case if the value is repeated many times within the text;
+        // very useful in case if the value of the User is repeated many times within the text (No need to interrupt the text with '" + name + "' or 'age' variable);
+        System.out.printf("\nMy name is %s and I am %d years old", name, age);
         System.out.printf("\nMy name is %s and I am %d years old", "John", 34); // it can also be used without creating the variables;
     }
 }
