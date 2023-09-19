@@ -9,7 +9,7 @@ class NumberCounter {
     }
 }
 
-public class Math_NumberCounter {
+public class Math_number_counter {
 
     public static void main(String[] args) {
         NumberCounter numberCounter = new NumberCounter();

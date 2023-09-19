@@ -1,4 +1,4 @@
-public class Method_example1 {
+public class Method_Set_Get {
 
     public static void main(String[] args) {
 
@@ -16,45 +16,36 @@ public class Method_example1 {
 
         System.out.println("\n\nRectangle:\n\nColor: " + rectangle.getColor() + "\nWidth: " + rectangle.getWidth()
                 + "\nHeight: " + rectangle.getHeight() + "\nArea: " + rectangle.calculateArea());
-
     }
-
 }
-
+//-----------------------------------------------------------------------------------------------------------------
 class Shape {
 
     protected String color;
 
     public void setColor(String color) {
         this.color = color;
-
     }
-
     public String getColor() {
         return color;
     }
 }
-
-
+//-------------------------------------------------------------------------------
 class Circle extends Shape {
 
     private double radius;
 
     public void setRadius(double radius) {
         this.radius = radius;
-
     }
-
     public double getRadius() {
         return radius;
-
     }
-
     public double calculateArea() {
         return Math.PI * radius * radius;
     }
 }
-
+//--------------------------------------------------------------------------------
 class Rectangle extends Shape {
 
     private double width;
@@ -62,24 +53,16 @@ class Rectangle extends Shape {
 
     public void setWidth(double width) {
         this.width = width;
-
     }
-
     public double getWidth() {
         return width;
-
     }
-
     public void setHeight(double height) {
         this.height = height;
-
     }
-
     public double getHeight() {
         return height;
-
     }
-
     public double calculateArea() {
         return width * height;
     }

@@ -9,8 +9,25 @@ public class Method_rules {
 
         myCar.drive();
         myCar.brake();
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+        // method = a block of code that is executed whenever it is called upon; 2:22;
+        //                             the PARAMETERS are the VARIABLES, i.e. the placeholders with no concrete values;
+        //                             the ARGUMENTS are the VALUES passed during function invocation;
+
+        String name = "Albert";
+        int age = 21;
+
+        hello(name, age);
+    }
+
+    static void hello(String name, int age) {
+        System.out.println("Hello " + name);
+        System.out.println("You are " + age);
     }
 }
+//----------------------------------------------------------------------------------------------------------------------------
 class Car {
     String make = "Chevrolet";
     String model = "Corvette";
@@ -19,6 +36,6 @@ class Car {
         System.out.println("You drive the car");
     }
     void brake() {
-        System.out.println("You step on the brakes");
+        System.out.println("You step on the brakes\n");
     }
 }

@@ -1,4 +1,4 @@
-public class MathOperations1 {
+public class Math_operations1 {
     public static void main(String[] args) {
         double x = 45.30, y = 12.40;
         int z = 100;
