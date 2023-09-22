@@ -1,55 +1,63 @@
-class Animals {
-    /*
-     * Upcasting refers to typecasting a child object to a parent object.
-     * Downcasting provides casting a parent object to a child object.
-     */
+class A1 {
 
-
-    String name;
-
-    public void makeNoise() {
-        System.out.println("I am just an Animal");
+    public void a() {
+        System.out.println("A-METHOD-a");
+    }
+    public void b() {
+        System.out.println("A-METHOD-b");
+    }
+    public void g() {
+        System.out.println("A-SINGLE-METHOD-g");
     }
 }
+//---------------------------------------------------------------------------
+class B1 extends A1 {
 
-class Dogs extends Animals {  // the subclass of Animal;
-
-    @Override
-    public void makeNoise() {
-        System.out.println("Woof woof!");
+    public void a() {
+        System.out.println("B-met-a");
     }
 
-    public void growl() {     //  this method exists only in a Dog class;
-        System.out.println("Grrrrrr");
+    public void b() {
+        System.out.println("B-met-b");
+    }
 
+    public void c() {
+        System.out.println("B-single-met-c");
     }
 }
-
+//----------------------------------------------------
 public class Up_And_Downcasting_rules {
 
     public static void main(String[] args) {
-//                                                         UPCASTING:
 
-        Animals animal = new Dogs(); // Upcasting Dog to Animal class; Creating a Child object and casting it to its Parent (easy);
-        // Java always allows us to treat an Object of a Child type as an Object of its Parent type;
-//      animal.growl();            // And yet, we do not have access to the method 'growl' in a Dog subclass;
+        System.out.println("With ordinary access to class 'A': ");
+        A1 a = new A1(); // with an ordinary class access we can assess only a particular class;
+        a.a();
+        a.b();
+        a.g();
 
-        doAnimalStuff(animal);     // the print-out is 'Woof woof!', because method 'makeNoise' is in the Animal and Dog classes;
+        System.out.println("\nWith ordinary access to class 'B': ");
+        B1 b = new B1();
+        b.a();
+        b.b();
+        b.c();
+//-------------------------------------------------------------------------------------------------		
+        System.out.println("\nWith 'upcasting':");
+        A1 a1 = new B1(); // with 'upcasting', we can access all the methods of the parent class 'A1'
+        a.a();           // and also the same named method(s) of the child class to the parent class;
+        a.b();
+        a.g();
+        a1.a();
+        a1.b();
 
+        System.out.println("\nWith 'downcasting':");
+        B1 b1 = (B1) a1; // with 'downcasting', we can access all the methods of parent and child classes;
+        a.a();
+        a.b();
+        a.g();
+        b1.a();
+        b1.b();
+        b1.c();
 
-//                                                         DOWNCASTING:
-
-        Dogs dog = (Dogs) animal;   //  we tell Java that this Animal is a Dog;
-        dog.growl();              //  now the method 'growl' in Dog class is working;
-
-
-    }
-
-    public static void doAnimalStuff (Animals animal) {
-        animal.makeNoise();                         // the method 'makeNoise' is in the Animal and Dog classes;
-        if (animal instanceof Dogs){                 // with 'if' we also print out 'Grrrrrr', i.e the method 'growl' of Dog class;
-            Dogs dog = (Dogs) animal;
-            dog.growl();
-        }
     }
 }
