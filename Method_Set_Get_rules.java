@@ -1,4 +1,14 @@
-public class Method_Set_Get {
+public class Method_Set_Get_rules {
+    /*
+    'Getters' and 'Setters' play an important role in retrieving and updating the value of a variable outside the Encapsulating class.
+    They protect your data and make your code more secure.
+    They also make the programmer convenient in setting and getting the value for a particular data type.
+
+    ---  A 'Setter' updates the value of a variable, while a 'Getter' reads the value of a variable ---
+
+    The 'Getter' and 'Setter' method gives you centralized control of how a certain field is
+    initialized and provided to the client, which makes it much easier to verify and debug.
+     */
 
     public static void main(String[] args) {
 

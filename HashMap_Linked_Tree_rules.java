@@ -35,14 +35,13 @@ public class HashMap_Linked_Tree_rules {
         System.out.println(employeeIDs.containsValue("John"));  // we can see if the key is 'true' via the value;
 
         employeeIDs.put(3698, "Anna");              // we can create a new or overwrite the already existed value 'Bob' to 'Anna' via the key '3698';
-        System.out.println(employeeIDs.get(3698));  // ' employeeIDs.replace ' -> method 'replace' only replaces the alrady existed value;
+        System.out.println(employeeIDs.get(3698));  // ' employeeIDs.replace ' -> method 'replace' only replaces the already existed value;
 
         employeeIDs.putIfAbsent(5896, "Albert");    // the method 'putIfAbsent' helps to put info if it is Absent in the 'HashMap';
         employeeIDs.remove(5896);                 // the method 'remove' removes the pair via the key;
 
         for (Map.Entry<Integer, String> map : employeeIDs.entrySet()) {   //  TO ITERATE THE WHOLE 'HashMap' (used mainly only for a review);
-            System.out.println(map.getKey() + ", " + map.getValue());
-        }
+            System.out.println(map.getKey() + ", " + map.getValue());}
 
 
         //                                                       LINKED HASH MAP:

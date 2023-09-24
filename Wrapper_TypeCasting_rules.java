@@ -44,11 +44,11 @@ public class Wrapper_TypeCasting_rules {
         //Integer n2 = new Integer(n1); // -> Autoboxing or Boxing (a short way is below);
         Integer n2 = n1;
 
-        Integer n3 = 6;               // Boxing (assigning a value);
+        Integer n3 = 6;                 // Boxing (assigning a value);
         System.out.println(n2 + " " + n3);
 
         Integer val = 60;
-        int n = val; // -> Unboxing;
+        int n = val;     // -> Unboxing;
         System.out.println(n);
 
         Integer n5 = 79;
