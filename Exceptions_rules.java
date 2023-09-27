@@ -10,11 +10,11 @@ public class Exceptions_rules {
      * These are also called as Runtime-Exceptions. These include programming bugs, such as logic errors or improper use of an API.
      * Runtime exceptions are ignored at the time of compilation.
      *
-     * - CHECKED exceptions − A checked exception is an exception that is checked (notified) by the compiler at compilation-time,
+     * - CHECKED exceptions − A checked exception is an exception that is checked (notified) by the compiler at compilation-time (when you write a code),
      * these are also called as Compile time-Exceptions. These exceptions cannot simply be ignored, the programmer should take care of (handle) these exceptions.
      *  https://www.tutorialspoint.com/java/java_exceptions.htm
      *
-     *  The Runtime Exception is the parent class in all 'Exceptions' of the Java programming language that are expected to crash or break down the program or application when they occur.
+     *  The Runtime Exception is the parent class of all 'Exceptions' of the Java programming language that are expected to crash or break down the program or application when they occur.
      *  Unlike exceptions that are not considered as Runtime Exceptions, Runtime Exceptions are never checked.
      */
 
@@ -58,20 +58,20 @@ public class Exceptions_rules {
         }
         System.out.println("The rest of the code.");
 
-
+//--------------------------- MULTI-CATCH BLOCK --------------------------------------------------------//
         try {
             String text = null;
             System.out.println(text.length());
         } catch (ArithmeticException e) {
             System.out.println("Arithmetic Exception is thrown.");
         } // multi-catch blocks of code;
-        catch (ArrayIndexOutOfBoundsException e) {
+          catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("ArrayIndexOutOfBoundsException Exception is thrown.");
         } catch (Exception e) {
             System.out.println("Super type Exception is thrown.");
         }
 
-        //----------------------------- NESTED TRY BLOCK ---------------------------------------
+//----------------------------- NESTED TRY BLOCK --------------------------------------------------------//
         // outer try block
         try {
             try {
@@ -94,7 +94,7 @@ public class Exceptions_rules {
         // (when there are only 10 elements in the Array), and will continue run the code;
     }
 }
-//--------------------------------------- WITH DO LOOP -----------------------------------------
+//------------------ 'DO WHILE' LOOP (IF STRING IN STEAD OF INT) ---------------------------------------//
 /*
         do {
             try {
@@ -104,7 +104,7 @@ public class Exceptions_rules {
             catch (InputMismatchException e) {System.out.println("There should be a number, not any other character.");
                 scan.nextLine(); }
         }
-        while  (n <= 0);   //       condition of a positive number to enter;
+        while  (n <= 0);   //       condition of a positive number to enter (as example);
         scan.close();
     }
 }

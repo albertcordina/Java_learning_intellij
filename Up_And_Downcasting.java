@@ -1,7 +1,7 @@
 class Animals {
     /*
-     * Upcasting refers to typecasting a child object to a parent object.
-     * Downcasting provides casting a parent object to a child object.
+     * Up-casting refers to typecasting a child object to a parent object.
+     * Down-casting provides casting a parent object to a child object.
      */
     String name;
 
@@ -28,11 +28,11 @@ public class Up_And_Downcasting {
     public static void main(String[] args) {
 //                                                         UPCASTING:
 
-        Animals animal = new Dogs(); // Upcasting Dog to Animal class; Creating a Child object and casting it to its Parent (easy);
-        // Java always allows us to treat an Object of a Child type as an Object of its Parent type;
+        Animals animal = new Dogs(); // Up-casting Dog to Animal class; Creating a Child object and casting it to its Parent (easy);
+                                    // Java always allows us to treat an Object of a Child type as an Object of its Parent type;
 //      animal.growl();            // And yet, we do not have access to the method 'growl' in a Dog subclass;
 
-        doAnimalStuff(animal);     // the print-out is 'Woof woof!', because method 'makeNoise' is in the Animal and Dog classes;
+        doAnimalStuff(animal);     // the print-out is 'Woof, woof!', because method 'makeNoise' is in the Animal and Dog classes;
 
 
 //                                                         DOWNCASTING:
