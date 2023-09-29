@@ -1,6 +1,53 @@
+import java.util.*;
+
 class Solution {
 
+    public static int a;
+    public static int b;
+
+    public static String result(int a, int b) {
+        if (a > b) {
+            return a + " - " + b + " = " + (a - b);
+        } else if (a < b) {
+            return b + " - " + a + " = " + (b - a);
+        } else {
+            return a + " is equal to " + b;
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        int option;
+
+        do {
+            System.out.print("\n'1' - enter the two numbers for operation\n'2' - Exit\n\nEnter your option here: ");
+            option = scan.nextInt();
+
+            switch (option) {
+                case 1:
+                    System.out.print("\nEnter the first number: ");
+                    a = scan.nextInt();
+                    System.out.print("Enter the second number: ");
+                    b = scan.nextInt();
+
+                    System.out.println(result(a, b));
+                    break;
+
+                case 2:
+                    System.out.println("Thank you for your session!");
+                    break;
+
+                default:
+                    System.out.println("Invalid choice!");
+            }
+
+        } while (option != 2);
+
+        scan.close();
+    }
 }
+
 
     /*
 

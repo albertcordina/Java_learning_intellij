@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Admission_Eligibility {
+public class Ternary_boolean_Admission_Eligibility {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

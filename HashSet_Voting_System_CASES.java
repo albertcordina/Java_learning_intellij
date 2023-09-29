@@ -9,7 +9,7 @@ public class HashSet_Voting_System_CASES {
 
             do {
                 System.out.print(
-                        "Voting System Menu:\n\n\t1.Cast a vote\n\t2.Count a vote\n\t3.Display vote count\n\t4.Exit\n\nEnter your choice: ");
+                        "\nVoting System Menu:\n\n\t1.Cast a vote\n\t2.Count a vote\n\t3.Display vote count\n\t4.Exit\n\nEnter your choice: ");
                 choice = scanner.nextInt();
                 scanner.nextLine();
 
@@ -36,6 +36,10 @@ public class HashSet_Voting_System_CASES {
                             System.out.println(candidate + ": " + candidateVotes + "Votes");
                         }
                         break;
+                    case 4:
+                        System.out.println("Thank you for your session!");
+                        break;
+
                     default:
                         System.out.println("Invalid choice.");
                 }
