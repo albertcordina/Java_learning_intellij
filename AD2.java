@@ -33,6 +33,16 @@ public class AD2 {
 
         for (Map.Entry<Integer, Help> map : list.entrySet()) {   //  TO ITERATE THE WHOLE 'HashMap' (used mainly only for a review);
             System.out.println("\n\nThe phone number is " + map.getKey() + map.getValue());}
+//---------------------------------------------------------------------------------------------------
+        //    changing one of the parameters of the object/value;
+        System.out.print("Enter your new name: "); // collect a new name;
+        String newName = scan.nextLine();
+
+        list.put(phoneNumber, new Help(newName, surname, age, password)); // placing a new name;
+
+
+        for (Map.Entry<Integer, Help> map : list.entrySet()) {   //  TO ITERATE THE WHOLE 'HashMap' (used mainly only for a review);
+            System.out.println("\n\nThe phone number is " + map.getKey() + map.getValue());}
 
 
     }
@@ -62,4 +72,5 @@ class Help {
     public String getSurname () { return  "Your surname is " + surname;}
 
     public String getAge () { return  "Your age is " + age;}
+
 }
