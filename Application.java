@@ -10,13 +10,13 @@ public class Application {
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("\nDear applicant, we are happy to help you with your application!" +
-                "\nAccording to the procedure we need some information from you" +
-                "\n\t\t\t\tIt won't take a long time\n\nPlease, enter your name? ");
+                "\nFor a further review we need some initial information from you" +
+                "\n\t\t\tIt won't take a long time\n\nPlease, enter your name? ");
 
         name = scanner.nextLine();
         System.out.println("Thank you, " + name);
 
-        System.out.print("\nWhat is your age?: ");
+        System.out.print("\nHow old are you?: ");
         age = scanner.nextByte();
 
         System.out.print("Thank you\n\nPlease, let us know how long (in years) you haven't " +
