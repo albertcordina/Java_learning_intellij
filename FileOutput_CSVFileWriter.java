@@ -30,7 +30,7 @@ public class FileOutput_CSVFileWriter {
 
         try {
             writeStudentRecordsToFile(studentRecords, fileName); // call the method above;
-            System.out.println("Student records have been successfully written to " + fileName);} // report the successfull writing into the file;
+            System.out.println("Student records have been successfully written to " + fileName);} // report the successfully writing into the file;
         catch (IOException e) { System.err.println("An error occurred while writing to the file: " + e.getMessage());} // if Error;
     }
 }
