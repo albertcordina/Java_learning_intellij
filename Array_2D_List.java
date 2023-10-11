@@ -18,7 +18,7 @@ public class Array_2D_List {
         ArrayList<String> drinksList = new ArrayList(); // ArrayList/ container of drinks;
         drinksList.add("soda");
         drinksList.add("coffee");
-
+//----------------------------------------------------------------------------------------
         ArrayList<ArrayList<String>> groceryList = new ArrayList(); // ArrayList/ container of the Lists;
         groceryList.add(bakeryList);
         groceryList.add(produceList);
