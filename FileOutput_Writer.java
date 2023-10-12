@@ -7,7 +7,7 @@ public class FileOutput_Writer {
         FileOutputStream fileOutputStream = null;
 
         try {
-            fileOutputStream = new FileOutputStream ("//home//dci-student//Desktop//names.txt"); // link the output file;
+            fileOutputStream = new FileOutputStream ("//home//dci-student//Desktop//NIOFiles//names.txt"); // link the output file;
 
             for (String name : names) {  // iterate the whole Array for the names;
 
@@ -17,7 +17,7 @@ public class FileOutput_Writer {
         finally {if (fileOutputStream != null) {fileOutputStream.close();} // close the method 'write' if the writing has been done;
         }
     }
-
+//-----------------------------------------------------------
     public static void main(String[] args) {
 
         String [] names = {"Nicole ", "Casie ", "Charlie ", "David ", "Raven "}; // create an Array list;
@@ -25,8 +25,7 @@ public class FileOutput_Writer {
 
         try {
             writeNamesToFile(names, fileName); // call the method above;
-            System.out.println("Names have been successfully written to " + fileName);}                         //  report: a successful written info;
-        catch (IOException e) {System.err.println("An error occurred while writing to the file: " + e.getMessage()); // if not successful written info;
-        }
+            System.out.println("Names have been successfully written to " + fileName);}                                // report: a successful written info;
+        catch (IOException e) {System.err.println("An error occurred while writing to the file: " + e.getMessage());} // if not successful written info;
     }
 }

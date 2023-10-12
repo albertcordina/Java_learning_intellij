@@ -9,6 +9,8 @@ public class Array_2D_List {
         bakeryList.add("pasta");
         bakeryList.add("garlic bread");
         bakeryList.add("donuts");
+        bakeryList.add("milk");
+        System.out.println(bakeryList.get(1)); // prints out the 'garlic bread';
 
         ArrayList<String> produceList = new ArrayList(); // ArrayList/ container of produce;
         produceList.add("tomatoes");
@@ -18,6 +20,7 @@ public class Array_2D_List {
         ArrayList<String> drinksList = new ArrayList(); // ArrayList/ container of drinks;
         drinksList.add("soda");
         drinksList.add("coffee");
+
 //----------------------------------------------------------------------------------------
         ArrayList<ArrayList<String>> groceryList = new ArrayList(); // ArrayList/ container of the Lists;
         groceryList.add(bakeryList);
