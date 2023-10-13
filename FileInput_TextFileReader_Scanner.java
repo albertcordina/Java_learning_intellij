@@ -17,8 +17,7 @@ public class FileInput_TextFileReader_Scanner {
 
                     System.out.print((char) currentByte);} // iterate and read the whole file;
             }
-            finally {
-                if (fileInputStream != null) { fileInputStream.close();} // close the method 'read';
+            finally { if (fileInputStream != null) { fileInputStream.close();} // close the method 'read';
             }
         }
 
@@ -50,8 +49,8 @@ public class FileInput_TextFileReader_Scanner {
                     default:
                         System.out.println("Invalid choice.");
                 }
-            }
-                while (option == "2") ;
+            }while (option != "2") ;
+
                 scan.close();
     }
 }

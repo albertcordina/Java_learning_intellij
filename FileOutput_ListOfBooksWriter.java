@@ -86,7 +86,7 @@ class LibraryMember extends Person {
 }
 //------------------------------------------------------------------------------------------------------------------------------------
 
-public class Main1 {
+public class FileOutput_ListOfBooksWriter {
     public static void main(String[] args) {
 
         Library library = new Library();
@@ -159,7 +159,7 @@ public class Main1 {
                     System.out.println("Invalid choice.");
             }
 
-        } while (option != "5");
+        } while (option == "5");
 
         scan.close();
     }
