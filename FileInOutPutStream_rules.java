@@ -12,8 +12,10 @@ public class FileInOutPutStream_rules {
 
     public static void main(String[] args) throws Exception { // <--- important: for merging the files (see below) use to 'throws Exception';
 
+//----------------------------------- FILE OUTPUT STREAM (WRITE INTO FILE) ---------------------------------------------------
+
         try {
-            FileOutputStream file = new FileOutputStream("//home//dci-student//Desktop//NIOFile//test.txt");
+            FileOutputStream file = new FileOutputStream("//home//dci-student//Desktop//NIOFiles//test.txt");
             file.write(120); // writes the letter 'x' into the file;
             file.write(65); // writes the letter 'A' into the file;
             // we do not use this method due to the complexity (no possibility to know all
@@ -25,7 +27,7 @@ public class FileInOutPutStream_rules {
 
 
         try {
-            FileOutputStream file = new FileOutputStream("//home//dci-student//Desktop//NIOWFile//test.txt");
+            FileOutputStream file = new FileOutputStream("//home//dci-student//Desktop//NIOFiles//test.txt");
             String text = "Java Course e01";
             byte b[] = text.getBytes(); // converting the String text into the b Array;
             file.write(b); // writes the whole text;
@@ -33,10 +35,11 @@ public class FileInOutPutStream_rules {
 
             System.out.println("Success!");
         } catch (Exception e) { System.out.println(e);}
-//-------------------------------------------
+
+//-------------------------------------- FILE INPUT STREAM (READ THE FILE) ---------------------------------------------------
 
         try {
-            FileInputStream file = new FileInputStream("//home//dci-student//Desktop//NIOFile//test.txt");
+            FileInputStream file = new FileInputStream("//home//dci-student//Desktop//NIOFiles//test.txt");
             int b = file.read(); // reads the first letter/character of the text in the file 'J' (not commonly used);
 
             System.out.println((char) b);
@@ -44,17 +47,18 @@ public class FileInOutPutStream_rules {
         } catch (Exception e) { System.out.println(e);}
 
         try {
-            FileInputStream file = new FileInputStream("//home//dci-student//Desktop//NIOFile//test.txt");
+            FileInputStream file = new FileInputStream("//home//dci-student//Desktop//NIOFiles//test.txt");
             int n = 0;
             while ((n = file.read()) != -1) { System.out.println(n);} // prints out the all letters of the text as the numbers;
 
             file.close();
         } catch (Exception e) { System.out.println(e);}
-//-------------------------------------- FILE INPUT STREAM (READ THE FILE) ---------------------------------------------------
 
-        FileInputStream file1 = new FileInputStream("//home//dci-student//Desktop//NIOFile//test1.txt");
-        FileInputStream file2 = new FileInputStream("//home//dci-student//Desktop//NIOFile//test2.txt");
-        FileOutputStream fileOutput = new FileOutputStream("//home//dci-student//Desktop//NIOFile//test3.txt");
+
+        //                              MERGING THE TWO FILES:
+        FileInputStream file1 = new FileInputStream("//home//dci-student//Desktop//NIOFiles//test1.txt");
+        FileInputStream file2 = new FileInputStream("//home//dci-student//Desktop//NIOFiles//test2.txt");
+        FileOutputStream fileOutput = new FileOutputStream("//home//dci-student//Desktop//NIOFiles//test3.txt");
 
         SequenceInputStream sis = new SequenceInputStream(file1, file2); // merging the two files into one;
         int n = 0;

@@ -14,7 +14,7 @@ public class HashMap_with_custom_object_Scanner {
         this.surname = surname;
         this.age = age;}
 
-    public String toString () { return "\nthe name: " + name + "\nthe surname: " + surname + "\nthe age: \n" + age;}
+    public String toString () { return "\nthe name: " + name + "\nthe surname: " + surname + "\nthe age: " + age;}
 
     public static void main(String[] args) {
 
@@ -41,5 +41,7 @@ public class HashMap_with_custom_object_Scanner {
         // printing out the whole 'HashMap' with the 'keys' and its 'values' with the help of the 'toString' method above;
         for (Map.Entry<Integer, HashMap_with_custom_object_Scanner> map : list.entrySet()) {
             System.out.println("\nthe phone number: " + map.getKey() + ", " + map.getValue());}
+
+        scan.close();
     }
 }

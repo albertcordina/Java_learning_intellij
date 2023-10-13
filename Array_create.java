@@ -25,6 +25,7 @@ public class Array_create {
         for (int x = 0; x < Arr3.length; x++) {   // and the loop selects every one of them,
             Arr3[x] = x;
             System.out.println(x);                 // and prints them out;
+
         }
     }
 }

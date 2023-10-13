@@ -1,6 +1,6 @@
 import java.io.FileOutputStream;
 import java.io.IOException;
-public class FileOutput_Writer {
+public class FileOutput_Writer_Array {
 
     public static void writeNamesToFile(String [] names, String fileName) throws IOException {
 

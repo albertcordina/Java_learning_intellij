@@ -1,4 +1,4 @@
-public class Array {
+public class Array_for_each {
     public static void main(String[] args) {
         // array = is an OBJECT used to store MULTIPLE VALUES in a SINGLE VARIABLE; 1:38
 
@@ -7,25 +7,19 @@ public class Array {
 
         System.out.println(cars[2]); // example: to print out the element "Tesla" by entering the number of the position of this element;
 
-        // Another way;
+        // Another way:
         // String[] cars = new String[3];
         // cars[0] = "Camaro";
         // cars[1] = "Corvette";
         // cars[2] = "Tesla";
         // System.out.println(cars[2]);
 
-        for (int i = 0; i < cars.length; i++) { // to display all the arrays of the cars;
-            System.out.println(cars[i]);
-        }
-
-        for (String i : cars){       // a shorter way to display all the elements (String) of the Array;
-            System.out.println(i);
-        }
+        for (int i = 0; i < cars.length; i++) { System.out.println(cars[i]);} // to display all the arrays of the cars;
+        for (String i : cars){ System.out.println(i);} // a shorter way to display all the elements (String) of the Array;
 
         int [] path = {1,2,3,4,5};
-        for (int i : path){          // a short way to display all the elements (int) of the Array;
-            System.out.println(i);
-        }
+
+        for (int i : path){ System.out.println(i); }// a short way to display all the elements (int) of the Array;
     }
 }
 

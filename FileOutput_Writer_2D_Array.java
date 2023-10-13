@@ -1,15 +1,18 @@
 import java.io.*;
-public class FileOutput_CSVFileWriter {
+public class FileOutput_Writer_2D_Array {
 
+                 //             WORKS FOR ANY FORMAT OF THE FILES:
     public static void writeStudentRecordsToFile(String [][] studentRecords, String fileName) throws IOException {
 
         FileOutputStream fileOutputStream = null;
 
         try {
-            fileOutputStream = new FileOutputStream("//home//dci-student//Desktop//test.csv");
+            fileOutputStream = new FileOutputStream("//home//dci-student//Desktop//NIOFiles//test.csv");
+         //   fileOutputStream = new FileOutputStream("//home//dci-student//Desktop//NIOFiles//testCsv.txt");
+
             for (String[] record : studentRecords) {                 // iterate the whole Array;
-                String csvLine = String.join (",", record) + "\n";  // join the 'comma' and the next line '\n' to the new String 'csvLine';
-                byte[] lineBytes = csvLine.getBytes();             // convert the whole updated text/list of the 'csvLine' to bytes 'lineBytes';
+                String theLine = String.join (",", record) + "\n";  // join the 'comma' and the next line '\n' to the new String 'theLine';
+                byte[] lineBytes = theLine.getBytes();             // convert the whole updated text/list of the 'theLine' to bytes 'lineBytes';
                 fileOutputStream.write(lineBytes);}               // write the converted 'lineBytes' into the file;
         }
         finally {
@@ -26,7 +29,8 @@ public class FileOutput_CSVFileWriter {
                 {"104", "David", "3.9"},
                 {"105", "Eve", "3.7"}
         };
-        String fileName = "student_records.csv";
+
+        String fileName = ".............";
 
         try {
             writeStudentRecordsToFile(studentRecords, fileName); // call the method above;

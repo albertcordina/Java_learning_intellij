@@ -24,33 +24,27 @@ public class Array_2D {
                 {"Camaro", "Corvette", "Silverado"},
                 {"Mustang", "Ranger", "F-150"},
                 {"Ferrari", "BMW", "Tesla"}
-        };
+                          };
+
         for (int i = 0; i < cars.length; i++) {
             String[] subArray = cars[i];
-            for (int j = 0; j < subArray.length; j++) {
-                System.out.printf("%s\t", subArray[j]);
-            }
+            for (int j = 0; j < subArray.length; j++) { System.out.printf("%s\t", subArray[j]); }
             System.out.println();
         }
 
         int [][] arr = {{1,2},{3,4}};
 
         for (int i = 0; i < 2; i++){
-            for (int j = 0; j < 2; j++){
-                System.out.printf(arr[i] [j] + "");
-            }
-            System.out.println();
-        }
+            for (int j = 0; j < 2; j++){ System.out.printf(arr[i] [j] + "");}
+            System.out.println(); }
+
         arr [0] [0] = 10;  // NOTE: it is like the coordinates: first -> 'y' and second -> 'x'
         arr [0] [1] = 20;  // starting from the upper left corner going down and to the right;
         arr [1] [0] = 30;
         arr [1] [1] = 40;
 
         for (int [] x : arr) {     // for each loop is used for involving all elements within an Array;
-            for (int y : x) {
-                System.out.print(y);
-            }
-            System.out.println();
-        }
+            for (int y : x) { System.out.print(y);}
+            System.out.println(); }
     }
 }

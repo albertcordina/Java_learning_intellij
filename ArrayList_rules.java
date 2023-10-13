@@ -17,13 +17,12 @@ public class ArrayList_rules {
         food.add("hamburger");
         food.add("hot_dog");
 
-        food.set(0, "sushi"); // 'set' method is to replace a value;
-        food.remove(2); // 'remove' method is to remove a value;
-        food.clear();         // 'clear' method is to remove all the values;
+        food.set(0, "sushi"); // 'set' method is to replace a value 'sushi' instead of 'pizza';
+        food.remove(2); // 'remove' method is to remove a value 'hot_dog' from the list;
+       // food.clear();         // 'clear' method is to remove all the values from the list;
 
-        for (int i=0; i<food.size(); i++) {  // to print out the all ArrayList;
-            System.out.println(food.get(i));
-        }
+        for (int i=0; i<food.size(); i++) { System.out.println(food.get(i));} // to print out the all ArrayList;
+        for (String x : food) { System.out.println("the food: " + x);} // 'for each' loop is a shorter;
 
         //      Training:
         ArrayList<Integer> list = new ArrayList<>();
@@ -34,12 +33,9 @@ public class ArrayList_rules {
 
         System.out.println(list.get(0)); // get the '9' to print out;
 
-        // via 'for loop': printing all the elements of the Array;
-        for (Integer n : list) {
-            System.out.println(n);
-        }
+        for (Integer n : list) { System.out.println("the element: " + n);} // via 'for loop': printing all the elements of the Array;
 
-        for (int i = 0; i < list.size(); i++){
+        for (int i = 0; i < list.size(); i++){ // also printing out all the elements;
             Integer n = list.get(i);
             System.out.println(i + ": " + n);
         }
