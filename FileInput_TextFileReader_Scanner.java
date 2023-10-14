@@ -47,7 +47,7 @@ public class FileInput_TextFileReader_Scanner {
                         break;
 
                     default:
-                        System.out.println("Invalid choice.");
+                        System.out.println("Invalid choice.\n");
                 }
             }while (option != "2") ;
 
