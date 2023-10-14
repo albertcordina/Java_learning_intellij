@@ -7,6 +7,7 @@ public class FileInOutputStream_TextFileReaderAndWriter_Scanner {
     static private String text;
     static private String linkToTheFile;
 
+//----------------------------------- WRITE INTO A FILE -----------------------------------------
     public static void writeToFile (String text, String linkToTheFile) throws IOException {
 
         FileOutputStream fileOutputStream = null;
@@ -20,7 +21,7 @@ public class FileInOutputStream_TextFileReaderAndWriter_Scanner {
         finally {if (fileOutputStream != null) {fileOutputStream.close();} // close the method 'write';
         }
     }
-
+//-------------------------------------- READ A FILE ---------------------------------------------
     public static void readAndDisplayFile  (String linkToTheFile) throws IOException { // the method is only for one file;
 
         FileInputStream fileInputStream = null;
@@ -36,7 +37,7 @@ public class FileInOutputStream_TextFileReaderAndWriter_Scanner {
         finally { if (fileInputStream != null) { fileInputStream.close();} // close the method 'read';
         }
     }
-
+//-------------------------------------------------------------------------------------------------------
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);

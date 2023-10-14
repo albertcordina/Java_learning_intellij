@@ -8,27 +8,31 @@ public class HashSet_Voting_System_CASES {
             String choice;
 
             do {
-                System.out.print("\nVoting System Menu:\n\n\t1.Cast a vote\n\t2.Count a vote\n\t3.Display vote count\n\t4.Exit\n\nEnter your choice: ");
+                System.out.print("\nVoting System Menu:\n\n\t1.Cast a vote\n\t" +
+                        "2.Count a vote\n\t3.Display vote count\n\t4.Exit\n\nEnter your choice: ");
                 choice = scanner.nextLine();
-                scanner.nextLine();
+              //  scanner.nextLine();
 
                 switch (choice) {
                     case "1":
                         System.out.print("Enter the candidate's name: ");
                         String candidateName = scanner.nextLine();
-                        votes.add(candidateName);
+
                         System.out.println("Vote casted for " + candidateName + ".");
+                        votes.add(candidateName);       //  the method 'add' is to add a new element/ candidate's name into the 'HashSet';
                         break;
+
                     case "2":
-                        int totalVotes = votes.size();
+                        int totalVotes = votes.size(); //  the method 'size' is to get the number of all elements/ votes in the 'HashSet';
                         System.out.println("Total votes: " + totalVotes);
                         break;
-                    case "3":
+
+                    case "3": // it doesn't work with the 'HashSet', because it does not store duplicate candidate's name entered for voting;
                         System.out.println("Vote count for each candidate: ");
-                        for (String candidate : votes) {
-                            int candidateVotes = 0;
+                        for (String candidate : votes) {  //  iterate the whole 'HashSet' for candidates;
+                            int candidateVotes = 0;       //  create 'int' with the '0' count of votes;
                             for (String vote : votes) {
-                                if (vote.equals(candidate)) {
+                                if (vote.equals(candidate)) { //
                                     candidateVotes++;
                                 }
                             }
@@ -44,7 +48,7 @@ public class HashSet_Voting_System_CASES {
                         System.out.println("Invalid choice.");
                 }
             }
-            while (choice == "4");
+            while (!choice.equals("4"));
             scanner.close();
         }
     }
