@@ -22,7 +22,7 @@ public class FileInOutputStream_TextFileReaderAndWriter_Scanner {
         }
     }
 //-------------------------------------- READ A FILE ---------------------------------------------
-    public static void readAndDisplayFile  (String linkToTheFile) throws IOException { // the method is only for one file;
+    public static void readAndDisplayFile  (String linkToTheFile) throws IOException {
 
         FileInputStream fileInputStream = null;
 
