@@ -18,7 +18,7 @@ public class Local_Date_Time_rules {
         System.out.println(date1.isLeapYear());        // checking if the year is Leap; '2020' is a Leap year, therefore, it shows 'true';
 
         LocalDate date2 = LocalDate.of(2023, 9, 01);
-        LocalDateTime dateTime = date2.atTime(1,43,8); // setting a prticular time to a date;
+        LocalDateTime dateTime = date2.atTime(1,43,8); // setting a particular time to a date;
         System.out.println(dateTime);
 
 

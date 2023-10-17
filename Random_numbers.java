@@ -2,6 +2,7 @@ import java.util.Random;       // is used for crating a guessing games, e.t.c.;
 
 public class Random_numbers {
     public static void main(String[] args) {
+
         Random random1 = new Random();
         Random random2 = new Random();
 
