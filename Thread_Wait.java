@@ -30,7 +30,7 @@ class Account5 {
             try { wait(); } // method 'wait' jumps to the next method below (where the 'notify' is) and gets activated again after;
             catch (Exception e) { System.out.println(e); }
         }
-        else { System.out.println("Thank you!");}
+        System.out.println("Thank you!");
     }
 
     synchronized void anotherTry () {
@@ -43,6 +43,6 @@ class Account5 {
             try { notify(); }
             catch (Exception e) { System.out.println(e); }
         }
-        else { System.out.println("Thank you!");}
+       // else { System.out.println("Thank you!");}
     }
 }

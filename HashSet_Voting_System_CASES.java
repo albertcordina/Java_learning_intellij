@@ -52,3 +52,8 @@ public class HashSet_Voting_System_CASES {
             scanner.close();
         }
     }
+ /*
+                  the 'toLowerCase()' method IGNORES THE SIZE OF THE INPUT LETTERS:
+ if (.... .toLowerCase().contains("...")) { System.out.println("The text contain this word ...");}
+
+  */
