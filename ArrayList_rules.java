@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class ArrayList_rules {
-    public static void main(String[] args) {
+    public static <Life> void main(String[] args) {
         // ArrayList = a resizable array. 2:06;
         // It contains a single array for data storage
         // Lists are therefore ordered collections (unlike sets) which also allow duplicates.
@@ -38,6 +38,13 @@ public class ArrayList_rules {
         for (int i = 0; i < list.size(); i++){ // also printing out all the elements;
             Integer n = list.get(i);
             System.out.println(i + ": " + n);
+
+//------------------------------------------- Java Collections Frame Work --------------------------------------------------------
+            ArrayList <Object> cat = new ArrayList<Object>();
+            cat.add(new Object());
+            cat.add(new Object());
+            for (Object a : cat) { System.out.println("the element: " + a);} // via 'for loop': printing all the elements of the Array;
+
         }
     }
 }
