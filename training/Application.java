@@ -1,3 +1,5 @@
+package training;
+
 import java.util.Scanner;
 
 public class Application {

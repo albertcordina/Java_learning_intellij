@@ -40,7 +40,7 @@ public class Thread_MultiThreading {
 	/*	Multi multi1 = new Multi ();
 		Multi multi2 = new Multi ();
 
-		multi1.start(); // method 'start' involves all the subjects affilated with Multi class, i.e. 'run' method at ones.
+		multi1.start(); // method 'start' involves all the subjects affiliated with Multi class, i.e. 'run' method at ones.
 		multi2.start(); */
 
     }
