@@ -7,6 +7,7 @@ class Calculations {
     private List<Integer> secondList = new ArrayList<>();
 //--------------------------------------------------
 //   THE 'SYNCHRONIZED' MAKES THE TWO OR MORE METHODS TO BE CALLED AND OUTCOME CONCURRENTLY/i.e. AT THE SAME TIME:
+    // // 'synchronized' is always combined only with the objects or methods
 
     public synchronized void firstCalculation () {
 
