@@ -1,9 +1,12 @@
 /*https://www.youtube.com/watch?v=r_MbozD32eo
  *
+    A thread is a thread of execution in a program.
+    The Java Virtual Machine allows an application to have multiple threads of execution running concurrently.
+    Every thread has a priority. Threads with higher priority are executed in preference to threads with lower priority.
+ *
  * The 'extends Thread' and 'implements Runnable' have the same function, the only difference is that
- * the implements Runnable allows us to use other interfaces and to extend to other class;
+ * the implements Runnable allows us to use other interfaces and to extend to another class;
  */
-
 class Multi implements Runnable {
 //class Multi extends Thread {
 
@@ -23,7 +26,7 @@ class Multi implements Runnable {
     }
 }
 
-public class Thread_MultiThreading {
+public class Thread_MultiThreading_rules {
     public static void main(String[] args) throws InterruptedException {
 
         for (int i = 0; i < 3; i++) {   // for number of threads
