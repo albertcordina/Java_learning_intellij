@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 class ReentrantLockExample {
     /*
      * 'ReentrantLock' - good alternative of synchronized block and methods. It is
-     * fast and it implements Lock, Serizable interface; To serialize an object
+     * fast, and it implements Lock, Serizable interface; To serialize an object
      * means to convert its state to a byte stream so that the byte stream can be
      * reverted back into a copy of the object;
      *

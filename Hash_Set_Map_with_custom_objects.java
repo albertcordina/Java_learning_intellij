@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class Hash_Set_Map_with_custom_objects {
+
     public static void main(String[] args) {
 
         //     HASH SET:
@@ -11,8 +12,7 @@ public class Hash_Set_Map_with_custom_objects {
         vehicles.add(new Vehicle(35, 4500.00,"Truck"));
         vehicles.add(new Vehicle(85, 2300.00,"Motorcycle"));
 
-        for (Vehicle vehicle : vehicles) {                        //  TO ITERATE THE WHOLE 'HashSet';
-            System.out.println(vehicle);}
+        for (Vehicle vehicle : vehicles) { System.out.println(vehicle);} //  TO ITERATE THE WHOLE 'HashSet'
 
 //---------------------------------------------------------------------------------------------------------------------------------
         //     HASH MAP:

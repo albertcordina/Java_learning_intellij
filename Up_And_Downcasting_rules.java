@@ -1,45 +1,36 @@
-class A1 {
+class ParentClass {
+
     int ai = 1;
-    public void a() {
-        System.out.println("A-METHOD-a");
-    }
-    public void b() {
-        System.out.println("A-METHOD-b");
-    }
-    public void g() {
-        System.out.println("A-SINGLE-METHOD-g");
-    }
+
+    public void a() { System.out.println("A-METHOD-a");} // 'a' and 'b' are the OVERRIDDEN methods in the Parent and Child classes.
+    public void b() { System.out.println("A-METHOD-b");}
+
+    public void g() { System.out.println("A-SINGLE-METHOD-g");}
 }
 //---------------------------------------------------------------------------
-class B1 extends A1 {
+class ChildClass extends ParentClass {
+
     int bi = 2;
 
-    public void a() {
-        System.out.println("B-child- met-a");
-    }
+    public void a() { System.out.println("B-child- met-a");} // 'a' and 'b' are the OVERIDDEN methods in the Parent and Child classes.
+    public void b() { System.out.println("B-child-met-b");}
 
-    public void b() {
-        System.out.println("B-child-met-b");
-    }
-
-    public void c() {
-        System.out.println("B-child-single-met-c");
-    }
+    public void c() { System.out.println("B-child-single-met-c");}
 }
-//----------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------
 public class Up_And_Downcasting_rules {
 
     public static void main(String[] args) {
 
         System.out.println("With ordinary access to 'parent' class 'A': ");
-        A1 a = new A1(); // with an ordinary class access we can assess a particular class;
+        ParentClass a = new ParentClass(); // with an ordinary class access we can assess a particular class;
         a.a();
         a.b();
         a.g();
         System.out.println(a.ai);
 
         System.out.println("\nWith ordinary access to 'child' class 'B': ");
-        B1 b = new B1();
+        ChildClass b = new ChildClass();
         b.a();
         b.b();
         b.c();
@@ -52,18 +43,18 @@ public class Up_And_Downcasting_rules {
 //                 It excludes of use all the same named method(s) of the parent class!
 
         System.out.println("\nWith 'up-casting':");
-        A1 a1 = new B1();
+        ParentClass a1 = new ChildClass();
         a1.a();
         a1.b();
         a1.g();  // <- another method of the parent class;
         System.out.println(a1.ai); // and only the variables of the parent class can be accessed;
-  //      System.out.println(a1.bi);
+        //      System.out.println(a1.bi);
 
 
 //         Down - Casting is addition to Up - Casting, and it gives us also the additional access to
 //                                                     all other method(s) of the child class;
         System.out.println("\nWith 'down-casting':");
-        B1 b1 = (B1) a1;
+        ChildClass b1 = (ChildClass) a1;
         b1.a();
         b1.b();
         b1.g();

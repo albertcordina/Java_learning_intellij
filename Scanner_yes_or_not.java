@@ -12,9 +12,8 @@ public class Scanner_yes_or_not {
         System.out.print("Are you married? (Enter 'yes' or 'not'): ");
         String mar_status = scanner.nextLine();
 
-        if (mar_status.equals("yes") || mar_status.equals("not")) {
-            System.out.println("Thank you.");
-        } else {
+        if (mar_status.equals("yes") || mar_status.equals("not")) { System.out.println("Thank you.");}
+        else {
             while (!mar_status.equals("yes") || !mar_status.equals("not")) {
                 System.out.print("ERROR. Enter 'yes' or 'not': ");
                 mar_status = scanner.nextLine();
