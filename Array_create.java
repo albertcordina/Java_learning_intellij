@@ -29,3 +29,11 @@ public class Array_create {
         }
     }
 }
+/*
+
+for (int i = 0; i < names.length; i++) { for (int j = i + 1 ; j < names.length; j++) { if (names[i].equals(names[j])) { // got the duplicate element } } }
+
+Read more: https://javarevisited.blogspot.com/2015/06/3-ways-to-find-duplicate-elements-in-array-java.html#ixzz8HFjWt3aN
+
+
+ */
