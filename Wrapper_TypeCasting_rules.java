@@ -1,12 +1,24 @@
 public class Wrapper_TypeCasting_rules {
+/*
+Wrapper class in Java helps in conversion from primitive to object as well as from object to primitive data type.
+Creating a wrapper class automatically creates a new field where the primitive data types are stored.
+The object of the wrapper class then holds the primitive data type.
 
+Explicit type conversion in Java, also known as type casting, is used when you want to convert a value of one data type
+to another data type that cannot be automatically done by the compiler.
+Example 1: Converting an integer to a double. Example 2: Converting a double to an integer.
+
+In implicit typecasting, the conversion involves a smaller data type to the larger type size.
+For example, the byte datatype implicitly typecast into short, char, int, long, float, and double.
+The process of converting the lower data type to that of a higher data type is referred to as Widening.
+ */
     public static void main(String[] args) {
 
         // WIDENING type casting:
         int x = 7;
         long y = x;
         float z = y;
-
+//   round() method to convert a double to int in Java
         System.out.println("int " + x + "\nlong " + y + "\nfloat " + z);
 
 
@@ -14,6 +26,7 @@ public class Wrapper_TypeCasting_rules {
         double a = 5.5;
         long b = (long) a;
         int c = (int) b;
+        // Typecasting. Since double is a bigger data type than int , it needs to be down-casted. See the syntax below: int IntValue = (int) DoubleValue;
 
         System.out.println("double " + a + "\nlong " + b + "\nint " + c);
 //______________________________________________________________________________________________________________________________________

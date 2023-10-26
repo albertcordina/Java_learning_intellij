@@ -18,7 +18,7 @@ public class HashSet_Linked_Tree_rules {
         fruits.add("blueberry");
         fruits.add("watermelon");
 
-        System.out.println(fruits.contains("kiwi"));
+        System.out.println(fruits.contains("kiwi")); // method 'contains' checks if 'kiwi' is in the list, i.e. 'true' or 'false'
 
         for (String x : fruits) {System.out.println(x);}	// the 'for-each' loop to print out the 'HashSet';
 
