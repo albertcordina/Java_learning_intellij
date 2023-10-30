@@ -8,7 +8,7 @@ public class Factorial_Calculation {
         int n = scanner.nextInt();
 
         if (n < 0) {
-            while (n < 0) {    //  the 'while' loop requests the user to enter only a positive number;
+            while (n <= 0) {    //  the 'while' loop requests the user to enter only a positive number;
                 System.out.print("Please, enter a positive number: ");
                 n = scanner.nextInt();
                 if (n > 0) {
