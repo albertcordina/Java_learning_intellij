@@ -1,46 +1,31 @@
 class ParentClass {
-
     int ai = 1;
 
-    public void a() { System.out.println("A-METHOD-a");} // 'a' and 'b' are the OVERRIDDEN methods in the Parent and Child classes.
-    public void b() { System.out.println("A-METHOD-b");}
+    public void a() { System.out.println("Parent a");} // 'a' and 'b' are the OVERRIDDEN methods in the Parent and Child classes.
+    public void b() { System.out.println("Parent b");}
 
-    public void g() { System.out.println("A-SINGLE-METHOD-g");}
+    public void g() { System.out.println("Parent-SINGLE-g");}
 }
 //---------------------------------------------------------------------------
 class ChildClass extends ParentClass {
 
     int bi = 2;
 
-    public void a() { System.out.println("B-child- met-a");} // 'a' and 'b' are the OVERIDDEN methods in the Parent and Child classes.
-    public void b() { System.out.println("B-child-met-b");}
+    public void a() { System.out.println("Child a");} // 'a' and 'b' are the OVERRIDDEN methods in the Parent and Child classes.
+    public void b() { System.out.println("Child b");}
 
-    public void c() { System.out.println("B-child-single-met-c");}
+    public void c() { System.out.println("Child-single-c");}
 }
 //---------------------------------------------------------------------------------------------------------------------
 public class Up_And_Downcasting_rules {
 
     public static void main(String[] args) {
 
-        System.out.println("With ordinary access to 'parent' class 'A': ");
-        ParentClass a = new ParentClass(); // with an ordinary class access we can assess a particular class;
-        a.a();
-        a.b();
-        a.g();
-        System.out.println(a.ai);
-
-        System.out.println("\nWith ordinary access to 'child' class 'B': ");
-        ChildClass b = new ChildClass();
-        b.a();
-        b.b();
-        b.c();
-        System.out.println(b.bi);
-//----------------------------------------------------------------------------------------------------
 //         -  Up and Down Casting is used to level up a child class to its parent class  -
 //
 //         Up - Casting gives us the convenience to use only one 'keyword' to access
 //             the same named method(s) of the child class and also all other methods of its parent class;
-//                 It excludes of use all the same named method(s) of the parent class!
+//                NOTE: It excludes of use all the same named method(s) of the parent class!
 
         System.out.println("\nWith 'up-casting':");
         ParentClass a1 = new ChildClass();
