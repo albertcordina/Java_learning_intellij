@@ -16,7 +16,9 @@ public class Inheritance_simple_example{
 //-------------------------------------------------------------------------
 class Mother {
 
-    int love = 5;;
+    int love = 5;
+    String baby = "This is a baby.";
+    String father; // instance variable
     public static void smiling () {System.out.println("The mother is smiling.");}
     //  NOTE: the method in the parent class must be 'static' to be accessed by its child class
 }
@@ -24,6 +26,9 @@ class Mother {
 class Baby extends Mother  {
 
     //   The Baby (extended) class does not need an instance to access his parent class
-    public void laughing () {System.out.println("The baby is laughing " + love + " times."); // int love is accessed
-        Mother.smiling();}                                                                  // method 'fly' is accessed
+    public void laughing () {System.out.println("The baby is laughing " + love + " times." + baby); // int love and String baby are accessed
+        Mother.smiling();                                                                              // method 'smiling' is accessed
+        baby = "Love";  // we can also assign a new value to a variable
+        father = "Love";// we can assign a value to an instance variable of the parent class
+    }
 }

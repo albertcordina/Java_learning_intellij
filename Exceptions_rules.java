@@ -94,7 +94,7 @@ public class Exceptions_rules {
         // (when there are only 10 elements in the Array), and will continue run the code;
     }
 }
-//------------------ 'DO WHILE' LOOP (IF STRING IN STEAD OF INT) ---------------------------------------//
+//------------------------------ 'DO WHILE' LOOP (IF STRING IN STEAD OF INT) ------------------------------------//
 /*
         do {
             try {
@@ -104,9 +104,30 @@ public class Exceptions_rules {
             catch (InputMismatchException e) {System.out.println("There should be a number, not any other character.");
                 scan.nextLine(); }
         }
-        while  (n <= 0);   //       condition of a positive number to enter (as example);
+        while  (n <= 0);     //       condition of a positive number to enter (as example);
         scan.close();
     }
 }
 
 */
+
+
+/*
+                    --- Requesting the user to enter a number and not any other character ---
+
+                int age;                  //  example of int
+                boolean input = false;
+
+				while (!input) { // the loop to request the user a number not any other character
+				try {
+					System.out.print("Enter your age: ");
+					age = scan.nextInt();
+                    input = true;
+                    scan.nextLine();
+
+				} catch (InputMismatchException e) {  //   the 'java.util.InputMismatchException'
+					System.out.print("Invalid input. ");
+					scan.nextLine();
+				} }
+
+ */
