@@ -16,7 +16,7 @@ public class Array_operations {
         System.out.println(sum(arr));
         System.out.println(average(arr));
         double ave = average(arr);
-        System.out.println(max(arr));
+        System.out.println(maximum(arr));
         System.out.println(aboveAverage(arr,ave));
 
 
@@ -29,40 +29,38 @@ public class Array_operations {
         System.out.println(even(arr2));
 
     }
-    public static int sum (int [] arr) {  // -> the method for calculating the sum of the Array;
-        int x = 0;
-        for (int y : arr) {
-            x += y;
-        }
-        return x;
-    }
-    public static int max (int [] arr) {  // -> the method for finding the maximum or minimum element of the Array;
-        int x = arr [0];
-        for (int y : arr) {
-            if (y > x) {        // (y < x) -> for finding the minimum;
-                x = y;
-            }
-        }
-        return x;
-    }
-    public static double average (int [] arr) { // -> the method for finding the average of the Array;
-        int x = 0;
-        for (int y : arr) {
-            x += y;
-        }
-        return x/arr.length;
-    }
-    public static int aboveAverage (int [] arr, double ave) { // -> the method of calculating the number of elements
-        int x = 0;                                            //    above the average of the Array;
-        for (int y : arr) {
-            if (y < ave) {
-                x++;
-            }
-        }
-        return x;
-    }
 
-    //        THE 2D ARRAYS:
+    // the method for calculating the sum of the Array
+    public static int sum (int [] arr) {
+        int x = 0;
+        for (int y : arr) { x += y;}
+        return x;}
+
+    //  the method for finding the maximum or minimum element of the Array
+    // NOTE: always save the calculation of the current result in a variable
+    public static int maximum (int [] numbers) {
+        int maxSoFar = numbers [0];
+        for (int num : numbers) { if (num > maxSoFar) {	maxSoFar = num;}}
+        return (maxSoFar);}
+
+    public static int minimum (int [] numbers) {
+        int minSoFar = numbers [0];
+        for (int num : numbers) { if (num < minSoFar) {	minSoFar = num;}}
+        return (minSoFar);}
+
+    // the method for finding the average of the Array
+    public static double average (int [] arr) {
+        int x = 0;
+        for (int y : arr) { x += y;}
+        return x/arr.length; }
+
+    // the method of calculating the number of elements above the average of the Array
+    public static int aboveAverage (int [] arr, double ave) {
+        int x = 0;
+        for (int y : arr) { if (y < ave) { x++;}}
+        return x; }
+
+    //------------------------- THE 2D ARRAYS -----------------------------------
 
     public static void printOut (int [] [] arr2) {
 
@@ -73,44 +71,49 @@ public class Array_operations {
             //System.out.println(); // print out the 2D Array in the two lines;
         }
     }
-    public static int sum2d (int [] [] arr2) {          // -> the method of calculating the sum of the 2D Array;
+
+    //  the method of calculating the sum of the 2D Array
+    public static int sum2d (int [] [] arr2) {
 
         int x = 0;
         for (int i = 0; i < arr2.length; i++) {
             for (int j = 0; j < arr2[i].length; j++) {
-                x += arr2 [i] [j];
-            }
+                x += arr2 [i] [j]; }
         }
         return x;
     }
+
+    //  the method of calculating the maximum/ minimum of the 2D Array
     public static int max2d (int [] [] arr2) {
         int x = 0;
         for (int i = 0; i < arr2.length; i++) {
             for (int j = 0; j < arr2[i].length; j++) {
-                if (arr2 [i] [j] > x) {   //  (arr2d [i] [j] < x) -> for minimum of the 2D Array;
-                    x = arr2 [i] [j];
-                }
+                if (arr2 [i] [j] > x) {
+                    //  (arr2d [i] [j] < x) -> for minimum of the 2D Array;
+                    x = arr2 [i] [j]; }
             }
         }
         return x;
     }
-    public static int average2d (int [] [] arr2) {        // -> the method of calculating the average of the 2D Array;
+
+    //  the method of calculating the average of the 2D Array
+    public static int average2d (int [] [] arr2) {
 
         int x = 0;
         for (int i = 0; i < arr2.length; i++) {
             for (int j = 0; j < arr2[i].length; j++) {
-                x += arr2 [i] [j];
-            }
+                x += arr2 [i] [j]; }
         }
         return x/ arr2.length;
     }
-    public static int even (int [] [] arr2) {            // -> the method of calculating the even numbers of the 2D Array;
+
+    // the method of calculating the even numbers of the 2D Array
+    public static int even (int [] [] arr2) {
         int x = 0;
         for (int i = 0; i < arr2.length; i++) {
             for (int j = 0; j < arr2[i].length; j++) {
                 if (arr2[i] [j] % 2 == 0) {
-                    x ++;
-                }
+                    x ++; }
             }
         }
         return x;

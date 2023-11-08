@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.ArrayList;
 
 public class Loop_For_Each {
     public static void main(String[] args) {
@@ -14,8 +15,10 @@ public class Loop_For_Each {
         animals.add("rat");
         animals.add("bird");
 
-        for (String i : animals) {
-            System.out.println(i);
-        }
+        for (String i : animals) { System.out.println(i); }
+
+            animals.forEach(System.out::println); // <--- shorter way with the method 'forEach'
+
+
     }
 }
