@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class ArrayList_rules {
+
     public static <Life> void main(String[] args) {
         // ArrayList = a resizable array. 2:06;
         // It contains a single array for data storage
