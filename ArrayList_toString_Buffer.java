@@ -43,11 +43,10 @@ public class ArrayList_toString_Buffer {
         System.out.println(info(info)); // calling the method for saving an updated data of ArrayList to String whenever it's needed
     }
     private static String info;
-    public static String info (String info) {
+    private static String info (String info) {
 
         StringBuffer sb = new StringBuffer();
         for (String n : al) {
-
             sb.append(n);
             sb.append(" ");
             info = sb.toString(); };

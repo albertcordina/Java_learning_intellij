@@ -23,7 +23,8 @@ public class ArrayList_rules {
        // food.clear();         // 'clear' method is to remove all the values from the list;
 
         for (int i=0; i<food.size(); i++) { System.out.println(food.get(i));} // to print out the all ArrayList;
-        for (String x : food) { System.out.println("the food: " + x);} // 'for each' loop is a shorter;
+        for (String x : food) { System.out.println(x);} // 'for each' loop is a shorter;
+        food.forEach(System.out::println);             //  'forEach' method is even shorter
 
         //      Training:
         ArrayList<Integer> list = new ArrayList<>();
@@ -44,7 +45,8 @@ public class ArrayList_rules {
             ArrayList <Object> cat = new ArrayList<Object>();
             cat.add(new Object());
             cat.add(new Object());
-            for (Object a : cat) { System.out.println("the element: " + a);} // via 'for loop': printing all the elements of the Array;
+           // for (Object a : cat) { System.out.println("the element: " + a);} // via 'for loop': printing all the elements of the Array;
+
 
         }
     }

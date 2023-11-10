@@ -4,14 +4,16 @@ public class Thread_Wait {
     public static void main(String[] args) {
 
         Account5 acc = new Account5(); // each Thread must have its own object;
+
+
         new Thread() {
             public void run () { acc.lessFive();}
-        }.start(); // start() method causes this thread to begin execution, the result is that two threads are running concurrently;
+        }.start(); // start() method causes this thread to begin execution, the result is that two threads are running concurrently
 
         new Thread() {
             public void run () { acc.anotherTry();}
-        }.start(); // start() method causes this thread to begin execution, the result is that two threads are running concurrently;
-    }
+        }.start();} // start() method causes this thread to begin execution, the result is that two threads are running concurrently
+
 }
 
 class Account5 {
@@ -43,6 +45,6 @@ class Account5 {
             try { notify(); }
             catch (Exception e) { System.out.println(e); }
         }
-       // else { System.out.println("Thank you!");}
+        else { System.out.println("Thank you!");}
     }
 }

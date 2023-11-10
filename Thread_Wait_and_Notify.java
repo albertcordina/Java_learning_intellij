@@ -38,11 +38,15 @@ public class Thread_Wait_and_Notify {
 
         Account acc = new Account(); // each Thread must have its own object;
         new Thread() {
-            public void run () { acc.withdraw(25000);}
-        }.start(); // start() method causes this thread to begin execution, the result is that two threads are running concurrently;
+            public void run () {
+                acc.withdraw(25000);}
+        }
+        .start(); // start() method causes this thread to begin execution, the result is that two threads are running concurrently;
 
         new Thread() {
-            public void run () { acc.deposit(6000);}
-        }.start(); // start() method causes this thread to begin execution, the result is that two threads are running concurrently;
+            public void run () {
+                acc.deposit(6000);}
+        }
+        .start(); // start() method causes this thread to begin execution, the result is that two threads are running concurrently;
     }
 }

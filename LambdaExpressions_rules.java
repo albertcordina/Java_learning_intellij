@@ -48,5 +48,5 @@ public class LambdaExpressions_rules {
 
     }
 }
-interface StringFunction { String run(String str);}
+interface StringFunction { String run(String str);} // you can give any name to the Interface
 

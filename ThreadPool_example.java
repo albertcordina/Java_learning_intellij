@@ -1,7 +1,7 @@
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-import java.util.*;
+
 class Tasks implements Runnable {
 
     private int id;
@@ -10,21 +10,21 @@ class Tasks implements Runnable {
 
     public void run () {System.out.println("Task " + id + ": started...");
 
-        try { Thread.sleep(50);} // we give a pause in between the tasks to be executed; i.e. if '0' --> all the tasks are executed at the same time;
+        try { Thread.sleep(1000);} // we give a pause in between the tasks to be executed; i.e. if '0' --> all the tasks are executed at the same time;
         catch (InterruptedException e) {System.out.println(e);}
         System.out.println("Task " + id + ": is finished.");
     }
 }
 
-public class ThreadPool_rules {
+public class ThreadPool_example {
 
     public static void main(String[] args) {
 
-        ExecutorService executor = Executors.newFixedThreadPool(1); // 'ExecutorService' is executing many tasks without sequences;
+        ExecutorService executor = Executors.newFixedThreadPool(100); // 'ExecutorService' is executing many tasks without sequences;
         // example: submitting a message to many users at ones;
         //'executor' is taking care of the action;
 
-        for (int i = 1; i < 6; i++) { executor.submit(new Tasks(i));}
+        for (int i = 1; i < 10; i++) { executor.submit(new Tasks(i));}
 
         executor.shutdown();  // 'shutdown' is only for finishing the submitting the task;
         System.out.println("Tasks are now submitted.");
