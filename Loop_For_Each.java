@@ -9,17 +9,17 @@ public class Loop_For_Each {
         //            less steps, more readable;
         //            less flexible;
 
-        //String[] animals = {"cat", "dog", "rat", "bird"};
-        ArrayList<String> animals = new ArrayList<String>();
+        String[] animal = {"cat", "dog", "rat", "bird"};
+        for (String i : animal) { System.out.println(i); }
 
+        ArrayList<String> animals = new ArrayList<String>();
         animals.add("\ncat");
         animals.add("dog");
         animals.add("rat");
         animals.add("bird");
 
         for (String i : animals) { System.out.println(i); }
-
-            animals.forEach(System.out::println); // <--- even shorter way with the method 'forEach'
+        animals.forEach(System.out::println); // <--- even shorter, but it does not work for Arrays above only for ArrayList
 
     }
 }
