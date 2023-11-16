@@ -27,24 +27,4 @@ public class Scanner_yes_or_not {
         scanner.close();
     }
 }
-/*
-                    --- Requesting the user to enter a number and not any other character ---
-
-                int age;                  //  example of int
-                boolean input = false;
-
-				while (!input) { // the loop to request the user a number not any other character
-				try {
-					System.out.print("Enter your age: ");
-					age = scan.nextInt();
-                    input = true;
-                    scan.nextLine();
-
-				} catch (InputMismatchException e) {  //   the 'java.util.InputMismatchException'
-					System.out.print("Invalid input. ");
-					scan.nextLine();
-				} }
-
- */
-
 
