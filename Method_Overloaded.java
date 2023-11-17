@@ -1,4 +1,4 @@
-public class Methods_Overloaded {
+public class Method_Overloaded {
     public static void main(String[] args) {
         // overloaded methods = methods that share the same name but have different parameters; 2:32;
         //                      method name + parameters = method signature;

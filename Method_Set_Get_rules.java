@@ -13,6 +13,7 @@ public class Method_Set_Get_rules {
     public static void main(String[] args) {
 
         Circle circle = new Circle();
+        // we can also set the color of circle via the class 'Circle', because it is a child class of class 'Color', i.e. Overridden method
         circle.setColor("Blue");
         circle.setRadius(3);
 
@@ -20,6 +21,7 @@ public class Method_Set_Get_rules {
                 + circle.calculateArea());
 
         Rectangle rectangle = new Rectangle();
+        // we can also set the color of rectangle via the class 'Rectangle', because it is a child class of class 'Color', i.e. Overridden method
         rectangle.setColor("White");
         rectangle.setWidth(3.0);
         rectangle.setHeight(4.0);
@@ -29,7 +31,7 @@ public class Method_Set_Get_rules {
     }
 }
 //-----------------------------------------------------------------------------------------------------------------
-class Shape {
+class Color {
 
     protected String color;
 
@@ -41,7 +43,7 @@ class Shape {
     }
 }
 //-------------------------------------------------------------------------------
-class Circle extends Shape {
+class Circle extends Color {
 
     private double radius;
 
@@ -56,7 +58,7 @@ class Circle extends Shape {
     }
 }
 //--------------------------------------------------------------------------------
-class Rectangle extends Shape {
+class Rectangle extends Color {
 
     private double width;
     private double height;

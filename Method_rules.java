@@ -11,7 +11,6 @@ public class Method_rules {
         myCar.brake();
 
 //-----------------------------------------------------------------------------------------------------------------------------
-
         // method = a block of code that is executed whenever it is called upon; 2:22;
         //                             the PARAMETERS are the VARIABLES, i.e. the placeholders with no concrete values;
         //                             the ARGUMENTS are the VALUES passed during function invocation;
