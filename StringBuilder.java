@@ -18,6 +18,7 @@ public class StringBuilder {
         String result = stringBuilder.toString();
         System.out.println(result); // Displaying the result: 'Hello World'
 
+
         // Inserting at a specific position
         stringBuilder.insert(6, "Awesome ");
         System.out.println(stringBuilder.toString()); // Displaying the modified result: 'Hello Awesome World'
@@ -25,6 +26,7 @@ public class StringBuilder {
         // Deleting a portion of the StringBuilder
         stringBuilder.delete(0, 5);                    // Deleting 'Hello'
         System.out.println(stringBuilder.toString()); //  Displaying the final result: 'Awesome World'
+
 
         // Mutable StringBuilder- prints out the WHOLE LENGTH of the text;
         java.lang.StringBuilder str = new java.lang.StringBuilder("Oh my God! It's started to rain!");
