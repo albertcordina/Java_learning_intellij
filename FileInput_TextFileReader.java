@@ -4,7 +4,7 @@ public class FileInput_TextFileReader {
 
         FileInputStream fileInputStream = null;
         try {
-            fileInputStream = new FileInputStream("//home//dci-student//Desktop//NIOFiles//names.txt"); // new object to link to the file;
+            fileInputStream = new FileInputStream("text.txt"); // new object to link to the file;
             int currentByte;
             while ((currentByte = fileInputStream.read()) != -1) { System.out.print((char) currentByte);} // iterate and read the whole file;
         }

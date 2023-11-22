@@ -12,15 +12,15 @@ public class FileInOutPutStream_rules {
 
     public static void main(String[] args) throws Exception { // <--- important: for merging the files (see below) use to 'throws Exception';
 
-//----------------------------------- FILE OUTPUT STREAM (WRITE INTO FILE) ---------------------------------------------------
+//----------------------------------- FILE OUTPUT STREAM (WRITES INTO FILE) ---------------------------------------------------
 
         try {
             FileOutputStream file = new FileOutputStream("//home//dci-student//Desktop//NIOFiles//test.txt");
             file.write(120); // writes the letter 'x' into the file;
             file.write(65); // writes the letter 'A' into the file;
             // we do not use this method due to the complexity (no possibility to know all
-            // the numbers of bytes corresponding to the letters);
-            file.close(); // <-- we need to always close the method 'write' in order to avoid any errors further;
+            // the numbers of bytes corresponding to the letters)
+            file.close(); // <-- we need to always close the method 'write' in order to avoid any further errors
 
             System.out.println("Success!");
         } catch (Exception e) { System.out.println(e);}
@@ -36,7 +36,7 @@ public class FileInOutPutStream_rules {
             System.out.println("Success!");
         } catch (Exception e) { System.out.println(e);}
 
-//-------------------------------------- FILE INPUT STREAM (READ THE FILE) ---------------------------------------------------
+//-------------------------------------- FILE INPUT STREAM (READS THE FILE) ---------------------------------------------------
 
         try {
             FileInputStream file = new FileInputStream("//home//dci-student//Desktop//NIOFiles//test.txt");
@@ -55,7 +55,8 @@ public class FileInOutPutStream_rules {
         } catch (Exception e) { System.out.println(e);}
 
 
-        //                              MERGING THE TWO FILES:
+//--------------------------------------------- MERGING THE TWO FILES ---------------------------------------------------------
+
         FileInputStream file1 = new FileInputStream("//home//dci-student//Desktop//NIOFiles//test1.txt");
         FileInputStream file2 = new FileInputStream("//home//dci-student//Desktop//NIOFiles//test2.txt");
         FileOutputStream fileOutput = new FileOutputStream("//home//dci-student//Desktop//NIOFiles//test3.txt");

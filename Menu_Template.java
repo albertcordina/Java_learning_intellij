@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class MenuTemplate {
+public class Menu_Template {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -27,6 +27,8 @@ public class MenuTemplate {
                         break;
                     case 0:
                         System.out.println("Exiting the menu. Goodbye!");
+                        System.out.println("Thank you for your session!");
+                        System.out.println("Thank you for visiting us!");
                         break;
                     default:
                         System.out.println("Invalid choice. Please enter a valid option.");
