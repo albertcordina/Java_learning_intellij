@@ -4,18 +4,28 @@ import java.util.concurrent.locks.ReentrantLock;
 
 class ReentrantLockExample {
     /*
-     * 'ReentrantLock' - good alternative of synchronized block and methods. It is
-     * fast, and it implements Lock, Serizable interface; To serialize an object
-     * means to convert its state to a byte stream so that the byte stream can be
-     * reverted back into a copy of the object;
+     * 'ReentrantLock' - good alternative of synchronized block and methods. It is fast, and it implements Lock, Serizable interface.
+     * To serialize an object means to convert its state to a byte stream so that the byte stream can be reverted back into a copy of the object.
      *
      * wait() await()
+     *
+     * Locking is a mechanism in Java that allows a thread to exclusively acquire a lock on an object or a class, preventing
+     * other threads from accessing the locked object or class until the lock is released.
+     *
+     * ReentrantLock: This is the most widely used implementation class of Lock interface.
+     * This class implements the Lock interface in similar way as synchronized keyword.
+     * Apart from Lock interface implementation, ReentrantLock contains some utility
+     * methods to get the thread holding the lock, threads waiting to acquire the lock etc.
+     * synchronized block are reentrant in nature i.e if a thread has lock on the monitor
+     * object and if another synchronized block requires to have the lock on the same monitor
+     * object then thread can enter that code block. I think this is the reason for the class name to be ReentrantLock.
+     *
+     * https://www.digitalocean.com/community/tutorials/java-lock-example-reentrantlock
+     *
      */
 
     private int value = 0;
     private Lock lock = new ReentrantLock(); // create instance of class ReentrantLock via the superclass Lock;
-    //private Condition condition = new lock.newCondition();
-
     private void increaseValue() {
         for (int n = 0; n < 2000; n++) { value++;}
     }
@@ -87,18 +97,3 @@ public class Reentrant_Lock {
         rl.finished();
     }
 }
-/*
- * Locking is a mechanism in Java that allows a thread to exclusively acquire a lock on an object or a class, preventing
- * other threads from accessing the locked object or class until the lock is released.
- *
- * ReentrantLock: This is the most widely used implementation class of Lock interface.
- * This class implements the Lock interface in similar way as synchronized keyword.
- * Apart from Lock interface implementation, ReentrantLock contains some utility
- * methods to get the thread holding the lock, threads waiting to acquire the lock etc.
- * synchronized block are reentrant in nature i.e if a thread has lock on the monitor
- * object and if another synchronized block requires to have the lock on the same monitor
- * object then thread can enter that code block. I think this is the reason for the class name to be ReentrantLock.
- *
- * https://www.digitalocean.com/community/tutorials/java-lock-example-reentrantlock
- *
- */
