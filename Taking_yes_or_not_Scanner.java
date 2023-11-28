@@ -1,6 +1,6 @@
 import java.util.Scanner; // Alt + Enter;
 
-public class Scanner_yes_or_not {
+public class Taking_yes_or_not_Scanner {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
