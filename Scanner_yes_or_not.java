@@ -10,19 +10,12 @@ public class Scanner_yes_or_not {
 //       --- Requesting the user a certain answer 'Yes' or 'Not' ---
 
         System.out.print("Are you married? (Enter 'yes' or 'not'): ");
-        String mar_status = scanner.nextLine();
+        String mar_status = scanner.nextLine().toLowerCase();
 
-        if (mar_status.equals("yes") || mar_status.equals("not")) { System.out.println("Thank you.");}
-        else {
-            while (!mar_status.equals("yes") || !mar_status.equals("not")) {
-                System.out.print("ERROR. Enter 'yes' or 'not': ");
-                mar_status = scanner.nextLine();
+        while (!mar_status.equals("yes") && !mar_status.equals("not")) {
+            System.out.print("Please, enter 'yes' or 'not': ");
+            mar_status = scanner.next().toLowerCase();
 
-                if (mar_status.equals("yes") || mar_status.equals("not")) {
-                    System.out.println("Thank you for your answer.");
-                    break;
-                }
-            }
         }
         scanner.close();
     }
