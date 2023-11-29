@@ -6,10 +6,11 @@ public class Taking_Password_Access_Attempts_Scanner {
     static String password = "love";
 
     public static void main(String[] args) {
-        enterPassword();
+        enterPassword(scanner);
+        scanner.close();
     }
 
-    public static void enterPassword() {
+    public static void enterPassword(Scanner scanner) {
         int maxAttempts = 3; // the set 3 attempts
         System.out.println("You have 3 attempts:");
 
