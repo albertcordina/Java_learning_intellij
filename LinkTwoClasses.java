@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class LinkTwoClasses {
+class Example {
 
     public double num1, num2, num3;
 
@@ -10,11 +10,11 @@ public class LinkTwoClasses {
     }
 }
 
-    class Main2 {
+public class LinkTwoClasses {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        LinkTwoClasses link = new LinkTwoClasses();
+        Example link = new Example();
 
         System.out.println("THE AVERAGE OF THE THREE NUMBERS\n");
         System.out.print("Enter the first number: ");
@@ -34,5 +34,7 @@ public class LinkTwoClasses {
         double average = link.average();
 
         System.out.print(average);
+
+        scanner.close();
     }
 }

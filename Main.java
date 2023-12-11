@@ -356,8 +356,7 @@ class Info extends Methods {
     static Map<Integer, Info> profiles = new HashMap<>();
 
     // The constructor for the HashMap 'profiles'
-    public Info(String name, int age, String occupation, int overallIncome, String password,
-                String statusOfApplication) {
+    public Info(String name, int age, String occupation, int overallIncome, String password, String statusOfApplication) {
         this.name = name;
         this.age = age;
         this.occupation = occupation;
@@ -462,7 +461,7 @@ class Info extends Methods {
 
             if (monthlySupport >= 2000) {
                 System.out.println("\n\tDear " + name + ",\nThe amount you are currently getting from "
-                        + "the governmen is sufficient and isn't applicable for the application.\nThank you for visiting us!");
+                        + "the government is sufficient and isn't applicable for the application.\nThank you for visiting us!");
                 System.exit(0);
             }
         }

@@ -41,7 +41,7 @@ class Product implements InventoryItem {
         return quant;
     }
 }
-
+//--------------------------------------------------------------------
 class Equipment implements InventoryItem {
 
     private String name;
@@ -76,9 +76,9 @@ class Equipment implements InventoryItem {
         return quant;
     }
 }
-
+//----------------------------------------------------------------------------------------
 class InventoryManager {
-    private List<InventoryItem> items;
+    private List<InventoryItem> items; // List of Objects of Interface 'InventoryItem'
     public InventoryManager() {
         items = new ArrayList<>();
     }
@@ -90,12 +90,12 @@ class InventoryManager {
     }
     public void displayInventory() {
         System.out.println("Inventory Contents:");
-        for (InventoryItem item : items) {
-            System.out.println(item.getAvailableQuantity() + " available - " + item.getClass().getSimpleName());
+        for (InventoryItem a : items) {
+            System.out.println(a.getAvailableQuantity() + " available - " + a.getClass().getSimpleName());
         }
     }
 }
-
+//--------------------------------------------------------------------------------------
 
 class Interface_InventoryManagement {
 

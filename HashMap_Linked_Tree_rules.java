@@ -8,7 +8,7 @@ public class HashMap_Linked_Tree_rules {
 
 		/*                                                         HASH MAP:
 
-           does not accept duplicates and does not support the ordering of the elements; NOTE: never use it if the elements should be in a certain order;
+           Hash Map does not accept duplicates and does not support the ordering of the elements; NOTE: never use it if the elements should be in a certain order;
 		   it  allows the same values (second element), but does not allow the same keys (the first element);
 		   exists in pair, i.e. the two Strings;
 		   it uses the LinkedList
