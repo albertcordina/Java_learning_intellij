@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
 public class Boolean_number_range {
+
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Validation of a given number within the valid range between 10 (included) and 50 (included)\nPlease, enter a number: ");

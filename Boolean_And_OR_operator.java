@@ -1,5 +1,7 @@
 public class Boolean_And_OR_operator {
+
     public static void main(String[] args) {
+
         // Boolean logical operator AND (&&) and OR (||) called short-circuit operators;
         // Short-circuit operators are logical operators that when evaluating two (or more) conditions,
         // may or may not evaluate the entire statement based upon the resulting evaluation from a previous condition;
